@@ -8,14 +8,6 @@
     <link rel="stylesheet" href="{{url_for('static', filename='styles/textbookList.css')}}">
 </head>
 <body>
-    {% with messages = get_flashed_messages() %}
-        {% if messages %}
-            {% for message in messages %}
-                <div class="flash-message">{{ message }}</div>
-            {% endfor %}
-        {% endif %}
-    {% endwith %}
-
     <nav>
         <a href="/logout">Logout</a>
         <a href="/newpost">List a textbook</a>
@@ -26,7 +18,7 @@
     <div class="results-container">
         <h2 class="results-header">
             {% if textbooks %}
-                Search Results for "{{ session["course"] }}"
+                Search Results for "{{ session["course1"] }}"
             {% else %}
                 No Results Found
             {% endif %}
@@ -39,7 +31,7 @@
                         <div class="textbook-title">{{ textbook.title }}</div>
                         <div class="textbook-details">
                             ISBN: {{ textbook.isbn }}<br>
-                            Course: {{ session["course"] }}<br>
+                            Course: {{ textbook.course}}<br>
                             Owner: {{textbook.owner_username}}<br>
                         </div>
                     </li>

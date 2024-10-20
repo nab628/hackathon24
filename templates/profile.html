@@ -23,7 +23,7 @@
         <h2>Your Profile</h2>
         <p>Email: <strong>{{session["username"]}}</strong></p>
       </section>
-
+      <h3>My Textbooks</h3>
       {% if textbooks %}
             <ul class="textbook-list">
                 {% for textbook in textbooks %}
@@ -31,7 +31,7 @@
                         <div class="textbook-title">{{ textbook.title }}</div>
                         <div class="textbook-details">
                             ISBN: {{ textbook.isbn }}<br>
-                            Course: {{ session["course"] }}<br>
+                            Course: {{ textbook.course }}<br>
                             <form id="deleteForm" action="/delete" method="POST" style="display: inline;">
                               <input type=hidden value="{{ textbook.isbn }}" name=isbn />
                               <input type=hidden value="{{ textbook.owner_username }}" name=owner_username />
