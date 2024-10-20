@@ -1,0 +1,2322 @@
+(User|users) _configure_property(username, Column)
+(User|users) _configure_property(password, Column)
+(User|users) Identified primary key columns: OrderedSet([Column('username', TEXT(), table=<users>, primary_key=True, nullable=False)])
+(User|users) constructed
+(Textbook|posts) _configure_property(title, Column)
+(Textbook|posts) _configure_property(topic, Column)
+(Textbook|posts) _configure_property(isbn, ColumnProperty)
+(Textbook|posts) _configure_property(owner_username, ColumnProperty)
+(Textbook|posts) _configure_property(id, Column)
+(Textbook|posts) _configure_property(course, ColumnProperty)
+(Textbook|posts) Identified primary key columns: OrderedSet([Column('id', INTEGER(), table=<posts>, primary_key=True, nullable=False)])
+(Textbook|posts) constructed
+BEGIN (implicit)
+PRAGMA main.table_info("users")
+[raw sql] ()
+PRAGMA temp.table_info("users")
+[raw sql] ()
+PRAGMA main.table_info("posts")
+[raw sql] ()
+PRAGMA temp.table_info("posts")
+[raw sql] ()
+
+CREATE TABLE users (
+	username TEXT NOT NULL, 
+	password TEXT NOT NULL, 
+	PRIMARY KEY (username)
+)
+
+
+[no key 0.00002s] ()
+
+CREATE TABLE posts (
+	title TEXT NOT NULL, 
+	topic TEXT NOT NULL, 
+	content INTEGER NOT NULL, 
+	user_id TEXT NOT NULL, 
+	id INTEGER NOT NULL, 
+	time TEXT NOT NULL, 
+	PRIMARY KEY (id)
+)
+
+
+[no key 0.00002s] ()
+COMMIT
+(User|users) _configure_property(username, Column)
+(User|users) _configure_property(password, Column)
+(User|users) Identified primary key columns: OrderedSet([Column('username', TEXT(), table=<users>, primary_key=True, nullable=False)])
+(User|users) constructed
+(Textbook|posts) _configure_property(title, Column)
+(Textbook|posts) _configure_property(topic, Column)
+(Textbook|posts) _configure_property(isbn, ColumnProperty)
+(Textbook|posts) _configure_property(owner_username, ColumnProperty)
+(Textbook|posts) _configure_property(id, Column)
+(Textbook|posts) _configure_property(course, ColumnProperty)
+(Textbook|posts) Identified primary key columns: OrderedSet([Column('id', INTEGER(), table=<posts>, primary_key=True, nullable=False)])
+(Textbook|posts) constructed
+BEGIN (implicit)
+PRAGMA main.table_info("users")
+[raw sql] ()
+PRAGMA main.table_info("posts")
+[raw sql] ()
+COMMIT
+(User|users) _post_configure_properties() started
+(User|users) initialize prop username
+(User|users) initialize prop password
+(User|users) _post_configure_properties() complete
+(Textbook|posts) _post_configure_properties() started
+(Textbook|posts) initialize prop title
+(Textbook|posts) initialize prop topic
+(Textbook|posts) initialize prop isbn
+(Textbook|posts) initialize prop owner_username
+(Textbook|posts) initialize prop id
+(Textbook|posts) initialize prop course
+(Textbook|posts) _post_configure_properties() complete
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[generated in 0.00019s] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 11.33s ago] ()
+(User|users) _configure_property(username, Column)
+(User|users) _configure_property(password, Column)
+(User|users) Identified primary key columns: OrderedSet([Column('username', TEXT(), table=<users>, primary_key=True, nullable=False)])
+(User|users) constructed
+(Textbook|posts) _configure_property(title, Column)
+(Textbook|posts) _configure_property(topic, Column)
+(Textbook|posts) _configure_property(isbn, ColumnProperty)
+(Textbook|posts) _configure_property(owner_username, ColumnProperty)
+(Textbook|posts) _configure_property(id, Column)
+(Textbook|posts) _configure_property(course, ColumnProperty)
+(Textbook|posts) Identified primary key columns: OrderedSet([Column('id', INTEGER(), table=<posts>, primary_key=True, nullable=False)])
+(Textbook|posts) constructed
+BEGIN (implicit)
+PRAGMA main.table_info("users")
+[raw sql] ()
+PRAGMA main.table_info("posts")
+[raw sql] ()
+COMMIT
+(User|users) _configure_property(username, Column)
+(User|users) _configure_property(password, Column)
+(User|users) Identified primary key columns: OrderedSet([Column('username', TEXT(), table=<users>, primary_key=True, nullable=False)])
+(User|users) constructed
+(Textbook|posts) _configure_property(title, Column)
+(Textbook|posts) _configure_property(topic, Column)
+(Textbook|posts) _configure_property(isbn, ColumnProperty)
+(Textbook|posts) _configure_property(owner_username, ColumnProperty)
+(Textbook|posts) _configure_property(id, Column)
+(Textbook|posts) _configure_property(course, ColumnProperty)
+(Textbook|posts) Identified primary key columns: OrderedSet([Column('id', INTEGER(), table=<posts>, primary_key=True, nullable=False)])
+(Textbook|posts) constructed
+BEGIN (implicit)
+PRAGMA main.table_info("users")
+[raw sql] ()
+PRAGMA main.table_info("posts")
+[raw sql] ()
+COMMIT
+(User|users) _post_configure_properties() started
+(User|users) initialize prop username
+(User|users) initialize prop password
+(User|users) _post_configure_properties() complete
+(Textbook|posts) _post_configure_properties() started
+(Textbook|posts) initialize prop title
+(Textbook|posts) initialize prop topic
+(Textbook|posts) initialize prop isbn
+(Textbook|posts) initialize prop owner_username
+(Textbook|posts) initialize prop id
+(Textbook|posts) initialize prop course
+(Textbook|posts) _post_configure_properties() complete
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[generated in 0.00029s] ()
+(User|users) _configure_property(username, Column)
+(User|users) _configure_property(password, Column)
+(User|users) Identified primary key columns: OrderedSet([Column('username', TEXT(), table=<users>, primary_key=True, nullable=False)])
+(User|users) constructed
+(Textbook|posts) _configure_property(title, Column)
+(Textbook|posts) _configure_property(topic, Column)
+(Textbook|posts) _configure_property(isbn, ColumnProperty)
+(Textbook|posts) _configure_property(owner_username, ColumnProperty)
+(Textbook|posts) _configure_property(id, Column)
+(Textbook|posts) _configure_property(course, ColumnProperty)
+(Textbook|posts) Identified primary key columns: OrderedSet([Column('id', INTEGER(), table=<posts>, primary_key=True, nullable=False)])
+(Textbook|posts) constructed
+BEGIN (implicit)
+PRAGMA main.table_info("users")
+[raw sql] ()
+PRAGMA main.table_info("posts")
+[raw sql] ()
+COMMIT
+(User|users) _configure_property(username, Column)
+(User|users) _configure_property(password, Column)
+(User|users) Identified primary key columns: OrderedSet([Column('username', TEXT(), table=<users>, primary_key=True, nullable=False)])
+(User|users) constructed
+(Textbook|posts) _configure_property(title, Column)
+(Textbook|posts) _configure_property(topic, Column)
+(Textbook|posts) _configure_property(isbn, ColumnProperty)
+(Textbook|posts) _configure_property(owner_username, ColumnProperty)
+(Textbook|posts) _configure_property(id, Column)
+(Textbook|posts) _configure_property(course, ColumnProperty)
+(Textbook|posts) Identified primary key columns: OrderedSet([Column('id', INTEGER(), table=<posts>, primary_key=True, nullable=False)])
+(Textbook|posts) constructed
+BEGIN (implicit)
+PRAGMA main.table_info("users")
+[raw sql] ()
+PRAGMA main.table_info("posts")
+[raw sql] ()
+COMMIT
+(User|users) _post_configure_properties() started
+(User|users) initialize prop username
+(User|users) initialize prop password
+(User|users) _post_configure_properties() complete
+(Textbook|posts) _post_configure_properties() started
+(Textbook|posts) initialize prop title
+(Textbook|posts) initialize prop topic
+(Textbook|posts) initialize prop isbn
+(Textbook|posts) initialize prop owner_username
+(Textbook|posts) initialize prop id
+(Textbook|posts) initialize prop course
+(Textbook|posts) _post_configure_properties() complete
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[generated in 0.00020s] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 15.25s ago] ()
+(User|users) _configure_property(username, Column)
+(User|users) _configure_property(password, Column)
+(User|users) Identified primary key columns: OrderedSet([Column('username', TEXT(), table=<users>, primary_key=True, nullable=False)])
+(User|users) constructed
+(Textbook|posts) _configure_property(title, Column)
+(Textbook|posts) _configure_property(topic, Column)
+(Textbook|posts) _configure_property(isbn, ColumnProperty)
+(Textbook|posts) _configure_property(owner_username, ColumnProperty)
+(Textbook|posts) _configure_property(id, Column)
+(Textbook|posts) _configure_property(course, ColumnProperty)
+(Textbook|posts) Identified primary key columns: OrderedSet([Column('id', INTEGER(), table=<posts>, primary_key=True, nullable=False)])
+(Textbook|posts) constructed
+BEGIN (implicit)
+PRAGMA main.table_info("users")
+[raw sql] ()
+PRAGMA main.table_info("posts")
+[raw sql] ()
+COMMIT
+(User|users) _configure_property(username, Column)
+(User|users) _configure_property(password, Column)
+(User|users) Identified primary key columns: OrderedSet([Column('username', TEXT(), table=<users>, primary_key=True, nullable=False)])
+(User|users) constructed
+(Textbook|posts) _configure_property(title, Column)
+(Textbook|posts) _configure_property(topic, Column)
+(Textbook|posts) _configure_property(isbn, ColumnProperty)
+(Textbook|posts) _configure_property(owner_username, ColumnProperty)
+(Textbook|posts) _configure_property(id, Column)
+(Textbook|posts) _configure_property(course, ColumnProperty)
+(Textbook|posts) Identified primary key columns: OrderedSet([Column('id', INTEGER(), table=<posts>, primary_key=True, nullable=False)])
+(Textbook|posts) constructed
+BEGIN (implicit)
+PRAGMA main.table_info("users")
+[raw sql] ()
+PRAGMA main.table_info("posts")
+[raw sql] ()
+COMMIT
+(User|users) _post_configure_properties() started
+(User|users) initialize prop username
+(User|users) initialize prop password
+(User|users) _post_configure_properties() complete
+(Textbook|posts) _post_configure_properties() started
+(Textbook|posts) initialize prop title
+(Textbook|posts) initialize prop topic
+(Textbook|posts) initialize prop isbn
+(Textbook|posts) initialize prop owner_username
+(Textbook|posts) initialize prop id
+(Textbook|posts) initialize prop course
+(Textbook|posts) _post_configure_properties() complete
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[generated in 0.00021s] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 7.698s ago] ()
+(User|users) _configure_property(username, Column)
+(User|users) _configure_property(password, Column)
+(User|users) Identified primary key columns: OrderedSet([Column('username', TEXT(), table=<users>, primary_key=True, nullable=False)])
+(User|users) constructed
+(Textbook|posts) _configure_property(title, Column)
+(Textbook|posts) _configure_property(topic, Column)
+(Textbook|posts) _configure_property(isbn, ColumnProperty)
+(Textbook|posts) _configure_property(owner_username, ColumnProperty)
+(Textbook|posts) _configure_property(id, Column)
+(Textbook|posts) _configure_property(course, ColumnProperty)
+(Textbook|posts) Identified primary key columns: OrderedSet([Column('id', INTEGER(), table=<posts>, primary_key=True, nullable=False)])
+(Textbook|posts) constructed
+BEGIN (implicit)
+PRAGMA main.table_info("users")
+[raw sql] ()
+PRAGMA main.table_info("posts")
+[raw sql] ()
+COMMIT
+(User|users) _configure_property(username, Column)
+(User|users) _configure_property(password, Column)
+(User|users) Identified primary key columns: OrderedSet([Column('username', TEXT(), table=<users>, primary_key=True, nullable=False)])
+(User|users) constructed
+(Textbook|posts) _configure_property(title, Column)
+(Textbook|posts) _configure_property(topic, Column)
+(Textbook|posts) _configure_property(isbn, ColumnProperty)
+(Textbook|posts) _configure_property(owner_username, ColumnProperty)
+(Textbook|posts) _configure_property(id, Column)
+(Textbook|posts) _configure_property(course, ColumnProperty)
+(Textbook|posts) Identified primary key columns: OrderedSet([Column('id', INTEGER(), table=<posts>, primary_key=True, nullable=False)])
+(Textbook|posts) constructed
+BEGIN (implicit)
+PRAGMA main.table_info("users")
+[raw sql] ()
+PRAGMA main.table_info("posts")
+[raw sql] ()
+COMMIT
+(User|users) _post_configure_properties() started
+(User|users) initialize prop username
+(User|users) initialize prop password
+(User|users) _post_configure_properties() complete
+(Textbook|posts) _post_configure_properties() started
+(Textbook|posts) initialize prop title
+(Textbook|posts) initialize prop topic
+(Textbook|posts) initialize prop isbn
+(Textbook|posts) initialize prop owner_username
+(Textbook|posts) initialize prop id
+(Textbook|posts) initialize prop course
+(Textbook|posts) _post_configure_properties() complete
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[generated in 0.00032s] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 1.572s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 4.604s ago] ()
+(User|users) _configure_property(username, Column)
+(User|users) _configure_property(password, Column)
+(User|users) Identified primary key columns: OrderedSet([Column('username', TEXT(), table=<users>, primary_key=True, nullable=False)])
+(User|users) constructed
+(Textbook|posts) _configure_property(title, Column)
+(Textbook|posts) _configure_property(topic, Column)
+(Textbook|posts) _configure_property(isbn, ColumnProperty)
+(Textbook|posts) _configure_property(owner_username, ColumnProperty)
+(Textbook|posts) _configure_property(id, Column)
+(Textbook|posts) _configure_property(course, ColumnProperty)
+(Textbook|posts) Identified primary key columns: OrderedSet([Column('id', INTEGER(), table=<posts>, primary_key=True, nullable=False)])
+(Textbook|posts) constructed
+BEGIN (implicit)
+PRAGMA main.table_info("users")
+[raw sql] ()
+PRAGMA main.table_info("posts")
+[raw sql] ()
+COMMIT
+(User|users) _post_configure_properties() started
+(User|users) initialize prop username
+(User|users) initialize prop password
+(User|users) _post_configure_properties() complete
+(Textbook|posts) _post_configure_properties() started
+(Textbook|posts) initialize prop title
+(Textbook|posts) initialize prop topic
+(Textbook|posts) initialize prop isbn
+(Textbook|posts) initialize prop owner_username
+(Textbook|posts) initialize prop id
+(Textbook|posts) initialize prop course
+(Textbook|posts) _post_configure_properties() complete
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[generated in 0.00033s] ()
+(User|users) _configure_property(username, Column)
+(User|users) _configure_property(password, Column)
+(User|users) Identified primary key columns: OrderedSet([Column('username', TEXT(), table=<users>, primary_key=True, nullable=False)])
+(User|users) constructed
+(Textbook|posts) _configure_property(title, Column)
+(Textbook|posts) _configure_property(topic, Column)
+(Textbook|posts) _configure_property(isbn, ColumnProperty)
+(Textbook|posts) _configure_property(owner_username, ColumnProperty)
+(Textbook|posts) _configure_property(id, Column)
+(Textbook|posts) _configure_property(course, ColumnProperty)
+(Textbook|posts) Identified primary key columns: OrderedSet([Column('id', INTEGER(), table=<posts>, primary_key=True, nullable=False)])
+(Textbook|posts) constructed
+BEGIN (implicit)
+PRAGMA main.table_info("users")
+[raw sql] ()
+PRAGMA main.table_info("posts")
+[raw sql] ()
+COMMIT
+(User|users) _configure_property(username, Column)
+(User|users) _configure_property(password, Column)
+(User|users) Identified primary key columns: OrderedSet([Column('username', TEXT(), table=<users>, primary_key=True, nullable=False)])
+(User|users) constructed
+(Textbook|posts) _configure_property(title, Column)
+(Textbook|posts) _configure_property(topic, Column)
+(Textbook|posts) _configure_property(isbn, ColumnProperty)
+(Textbook|posts) _configure_property(owner_username, ColumnProperty)
+(Textbook|posts) _configure_property(id, Column)
+(Textbook|posts) _configure_property(course, ColumnProperty)
+(Textbook|posts) Identified primary key columns: OrderedSet([Column('id', INTEGER(), table=<posts>, primary_key=True, nullable=False)])
+(Textbook|posts) constructed
+BEGIN (implicit)
+PRAGMA main.table_info("users")
+[raw sql] ()
+PRAGMA main.table_info("posts")
+[raw sql] ()
+COMMIT
+(User|users) _configure_property(username, Column)
+(User|users) _configure_property(password, Column)
+(User|users) Identified primary key columns: OrderedSet([Column('username', TEXT(), table=<users>, primary_key=True, nullable=False)])
+(User|users) constructed
+(Textbook|posts) _configure_property(title, Column)
+(Textbook|posts) _configure_property(topic, Column)
+(Textbook|posts) _configure_property(isbn, ColumnProperty)
+(Textbook|posts) _configure_property(owner_username, ColumnProperty)
+(Textbook|posts) _configure_property(id, Column)
+(Textbook|posts) _configure_property(course, ColumnProperty)
+(Textbook|posts) Identified primary key columns: OrderedSet([Column('id', INTEGER(), table=<posts>, primary_key=True, nullable=False)])
+(Textbook|posts) constructed
+BEGIN (implicit)
+PRAGMA main.table_info("users")
+[raw sql] ()
+PRAGMA main.table_info("posts")
+[raw sql] ()
+COMMIT
+(User|users) _configure_property(username, Column)
+(User|users) _configure_property(password, Column)
+(User|users) Identified primary key columns: OrderedSet([Column('username', TEXT(), table=<users>, primary_key=True, nullable=False)])
+(User|users) constructed
+(Textbook|posts) _configure_property(title, Column)
+(Textbook|posts) _configure_property(topic, Column)
+(Textbook|posts) _configure_property(isbn, ColumnProperty)
+(Textbook|posts) _configure_property(owner_username, ColumnProperty)
+(Textbook|posts) _configure_property(id, Column)
+(Textbook|posts) _configure_property(course, ColumnProperty)
+(Textbook|posts) Identified primary key columns: OrderedSet([Column('id', INTEGER(), table=<posts>, primary_key=True, nullable=False)])
+(Textbook|posts) constructed
+BEGIN (implicit)
+PRAGMA main.table_info("users")
+[raw sql] ()
+PRAGMA main.table_info("posts")
+[raw sql] ()
+COMMIT
+(User|users) _configure_property(username, Column)
+(User|users) _configure_property(password, Column)
+(User|users) Identified primary key columns: OrderedSet([Column('username', TEXT(), table=<users>, primary_key=True, nullable=False)])
+(User|users) constructed
+(Textbook|posts) _configure_property(title, Column)
+(Textbook|posts) _configure_property(topic, Column)
+(Textbook|posts) _configure_property(isbn, ColumnProperty)
+(Textbook|posts) _configure_property(owner_username, ColumnProperty)
+(Textbook|posts) _configure_property(id, Column)
+(Textbook|posts) _configure_property(course, ColumnProperty)
+(Textbook|posts) Identified primary key columns: OrderedSet([Column('id', INTEGER(), table=<posts>, primary_key=True, nullable=False)])
+(Textbook|posts) constructed
+BEGIN (implicit)
+PRAGMA main.table_info("users")
+[raw sql] ()
+PRAGMA main.table_info("posts")
+[raw sql] ()
+COMMIT
+(User|users) _configure_property(username, Column)
+(User|users) _configure_property(password, Column)
+(User|users) Identified primary key columns: OrderedSet([Column('username', TEXT(), table=<users>, primary_key=True, nullable=False)])
+(User|users) constructed
+(Textbook|posts) _configure_property(title, Column)
+(Textbook|posts) _configure_property(topic, Column)
+(Textbook|posts) _configure_property(isbn, ColumnProperty)
+(Textbook|posts) _configure_property(owner_username, ColumnProperty)
+(Textbook|posts) _configure_property(id, Column)
+(Textbook|posts) _configure_property(course, ColumnProperty)
+(Textbook|posts) Identified primary key columns: OrderedSet([Column('id', INTEGER(), table=<posts>, primary_key=True, nullable=False)])
+(Textbook|posts) constructed
+BEGIN (implicit)
+PRAGMA main.table_info("users")
+[raw sql] ()
+PRAGMA main.table_info("posts")
+[raw sql] ()
+COMMIT
+(User|users) _configure_property(username, Column)
+(User|users) _configure_property(password, Column)
+(User|users) Identified primary key columns: OrderedSet([Column('username', TEXT(), table=<users>, primary_key=True, nullable=False)])
+(User|users) constructed
+(Textbook|posts) _configure_property(title, Column)
+(Textbook|posts) _configure_property(topic, Column)
+(Textbook|posts) _configure_property(isbn, ColumnProperty)
+(Textbook|posts) _configure_property(owner_username, ColumnProperty)
+(Textbook|posts) _configure_property(id, Column)
+(Textbook|posts) _configure_property(course, ColumnProperty)
+(Textbook|posts) Identified primary key columns: OrderedSet([Column('id', INTEGER(), table=<posts>, primary_key=True, nullable=False)])
+(Textbook|posts) constructed
+BEGIN (implicit)
+PRAGMA main.table_info("users")
+[raw sql] ()
+PRAGMA main.table_info("posts")
+[raw sql] ()
+COMMIT
+(User|users) _configure_property(username, Column)
+(User|users) _configure_property(password, Column)
+(User|users) Identified primary key columns: OrderedSet([Column('username', TEXT(), table=<users>, primary_key=True, nullable=False)])
+(User|users) constructed
+(Textbook|posts) _configure_property(title, Column)
+(Textbook|posts) _configure_property(topic, Column)
+(Textbook|posts) _configure_property(isbn, ColumnProperty)
+(Textbook|posts) _configure_property(owner_username, ColumnProperty)
+(Textbook|posts) _configure_property(id, Column)
+(Textbook|posts) _configure_property(course, ColumnProperty)
+(Textbook|posts) Identified primary key columns: OrderedSet([Column('id', INTEGER(), table=<posts>, primary_key=True, nullable=False)])
+(Textbook|posts) constructed
+BEGIN (implicit)
+PRAGMA main.table_info("users")
+[raw sql] ()
+PRAGMA main.table_info("posts")
+[raw sql] ()
+COMMIT
+(User|users) _configure_property(username, Column)
+(User|users) _configure_property(password, Column)
+(User|users) Identified primary key columns: OrderedSet([Column('username', TEXT(), table=<users>, primary_key=True, nullable=False)])
+(User|users) constructed
+(Textbook|posts) _configure_property(title, Column)
+(Textbook|posts) _configure_property(topic, Column)
+(Textbook|posts) _configure_property(isbn, ColumnProperty)
+(Textbook|posts) _configure_property(owner_username, ColumnProperty)
+(Textbook|posts) _configure_property(id, Column)
+(Textbook|posts) _configure_property(course, ColumnProperty)
+(Textbook|posts) Identified primary key columns: OrderedSet([Column('id', INTEGER(), table=<posts>, primary_key=True, nullable=False)])
+(Textbook|posts) constructed
+BEGIN (implicit)
+PRAGMA main.table_info("users")
+[raw sql] ()
+PRAGMA main.table_info("posts")
+[raw sql] ()
+COMMIT
+(User|users) _configure_property(username, Column)
+(User|users) _configure_property(password, Column)
+(User|users) Identified primary key columns: OrderedSet([Column('username', TEXT(), table=<users>, primary_key=True, nullable=False)])
+(User|users) constructed
+(Textbook|posts) _configure_property(title, Column)
+(Textbook|posts) _configure_property(topic, Column)
+(Textbook|posts) _configure_property(isbn, ColumnProperty)
+(Textbook|posts) _configure_property(owner_username, ColumnProperty)
+(Textbook|posts) _configure_property(id, Column)
+(Textbook|posts) _configure_property(course, ColumnProperty)
+(Textbook|posts) Identified primary key columns: OrderedSet([Column('id', INTEGER(), table=<posts>, primary_key=True, nullable=False)])
+(Textbook|posts) constructed
+BEGIN (implicit)
+PRAGMA main.table_info("users")
+[raw sql] ()
+PRAGMA main.table_info("posts")
+[raw sql] ()
+COMMIT
+(User|users) _post_configure_properties() started
+(User|users) initialize prop username
+(User|users) initialize prop password
+(User|users) _post_configure_properties() complete
+(Textbook|posts) _post_configure_properties() started
+(Textbook|posts) initialize prop title
+(Textbook|posts) initialize prop topic
+(Textbook|posts) initialize prop isbn
+(Textbook|posts) initialize prop owner_username
+(Textbook|posts) initialize prop id
+(Textbook|posts) initialize prop course
+(Textbook|posts) _post_configure_properties() complete
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[generated in 0.00032s] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 0.006782s ago] ()
+(User|users) _configure_property(username, Column)
+(User|users) _configure_property(password, Column)
+(User|users) Identified primary key columns: OrderedSet([Column('username', TEXT(), table=<users>, primary_key=True, nullable=False)])
+(User|users) constructed
+(Textbook|posts) _configure_property(title, Column)
+(Textbook|posts) _configure_property(topic, Column)
+(Textbook|posts) _configure_property(isbn, ColumnProperty)
+(Textbook|posts) _configure_property(owner_username, ColumnProperty)
+(Textbook|posts) _configure_property(id, Column)
+(Textbook|posts) _configure_property(course, ColumnProperty)
+(Textbook|posts) Identified primary key columns: OrderedSet([Column('id', INTEGER(), table=<posts>, primary_key=True, nullable=False)])
+(Textbook|posts) constructed
+BEGIN (implicit)
+PRAGMA main.table_info("users")
+[raw sql] ()
+PRAGMA main.table_info("posts")
+[raw sql] ()
+COMMIT
+(User|users) _post_configure_properties() started
+(User|users) initialize prop username
+(User|users) initialize prop password
+(User|users) _post_configure_properties() complete
+(Textbook|posts) _post_configure_properties() started
+(Textbook|posts) initialize prop title
+(Textbook|posts) initialize prop topic
+(Textbook|posts) initialize prop isbn
+(Textbook|posts) initialize prop owner_username
+(Textbook|posts) initialize prop id
+(Textbook|posts) initialize prop course
+(Textbook|posts) _post_configure_properties() complete
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[generated in 0.00032s] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 3.092s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 8.569s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 8.574s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 12.92s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 12.92s ago] ()
+(User|users) _configure_property(username, Column)
+(User|users) _configure_property(password, Column)
+(User|users) Identified primary key columns: OrderedSet([Column('username', TEXT(), table=<users>, primary_key=True, nullable=False)])
+(User|users) constructed
+(Textbook|posts) _configure_property(title, Column)
+(Textbook|posts) _configure_property(topic, Column)
+(Textbook|posts) _configure_property(isbn, ColumnProperty)
+(Textbook|posts) _configure_property(owner_username, ColumnProperty)
+(Textbook|posts) _configure_property(id, Column)
+(Textbook|posts) _configure_property(course, ColumnProperty)
+(Textbook|posts) Identified primary key columns: OrderedSet([Column('id', INTEGER(), table=<posts>, primary_key=True, nullable=False)])
+(Textbook|posts) constructed
+BEGIN (implicit)
+PRAGMA main.table_info("users")
+[raw sql] ()
+PRAGMA main.table_info("posts")
+[raw sql] ()
+COMMIT
+(User|users) _configure_property(username, Column)
+(User|users) _configure_property(password, Column)
+(User|users) Identified primary key columns: OrderedSet([Column('username', TEXT(), table=<users>, primary_key=True, nullable=False)])
+(User|users) constructed
+(Textbook|posts) _configure_property(title, Column)
+(Textbook|posts) _configure_property(topic, Column)
+(Textbook|posts) _configure_property(isbn, ColumnProperty)
+(Textbook|posts) _configure_property(owner_username, ColumnProperty)
+(Textbook|posts) _configure_property(id, Column)
+(Textbook|posts) _configure_property(course, ColumnProperty)
+(Textbook|posts) Identified primary key columns: OrderedSet([Column('id', INTEGER(), table=<posts>, primary_key=True, nullable=False)])
+(Textbook|posts) constructed
+BEGIN (implicit)
+PRAGMA main.table_info("users")
+[raw sql] ()
+PRAGMA main.table_info("posts")
+[raw sql] ()
+COMMIT
+(User|users) _post_configure_properties() started
+(User|users) initialize prop username
+(User|users) initialize prop password
+(User|users) _post_configure_properties() complete
+(Textbook|posts) _post_configure_properties() started
+(Textbook|posts) initialize prop title
+(Textbook|posts) initialize prop topic
+(Textbook|posts) initialize prop isbn
+(Textbook|posts) initialize prop owner_username
+(Textbook|posts) initialize prop id
+(Textbook|posts) initialize prop course
+(Textbook|posts) _post_configure_properties() complete
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[generated in 0.00035s] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 1.808s ago] ()
+BEGIN (implicit)
+INSERT INTO posts (title, topic, content, user_id, time) VALUES (?, ?, ?, ?, ?)
+[generated in 0.00049s] ('Calculus: Early Trancendentals', 'Calculus 2', '9781337613927', 'nab628@lehigh.edu', 'MATH022')
+COMMIT
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 169.8s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 169.8s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 266.1s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 267.2s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 267.7s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 267.9s ago] ()
+(User|users) _configure_property(username, Column)
+(User|users) _configure_property(password, Column)
+(User|users) Identified primary key columns: OrderedSet([Column('username', TEXT(), table=<users>, primary_key=True, nullable=False)])
+(User|users) constructed
+(Textbook|posts) _configure_property(title, Column)
+(Textbook|posts) _configure_property(topic, Column)
+(Textbook|posts) _configure_property(isbn, ColumnProperty)
+(Textbook|posts) _configure_property(owner_username, ColumnProperty)
+(Textbook|posts) _configure_property(id, Column)
+(Textbook|posts) _configure_property(course, ColumnProperty)
+(Textbook|posts) Identified primary key columns: OrderedSet([Column('id', INTEGER(), table=<posts>, primary_key=True, nullable=False)])
+(Textbook|posts) constructed
+BEGIN (implicit)
+PRAGMA main.table_info("users")
+[raw sql] ()
+PRAGMA main.table_info("posts")
+[raw sql] ()
+COMMIT
+(User|users) _configure_property(username, Column)
+(User|users) _configure_property(password, Column)
+(User|users) Identified primary key columns: OrderedSet([Column('username', TEXT(), table=<users>, primary_key=True, nullable=False)])
+(User|users) constructed
+(Textbook|posts) _configure_property(title, Column)
+(Textbook|posts) _configure_property(topic, Column)
+(Textbook|posts) _configure_property(isbn, ColumnProperty)
+(Textbook|posts) _configure_property(owner_username, ColumnProperty)
+(Textbook|posts) _configure_property(id, Column)
+(Textbook|posts) _configure_property(course, ColumnProperty)
+(Textbook|posts) Identified primary key columns: OrderedSet([Column('id', INTEGER(), table=<posts>, primary_key=True, nullable=False)])
+(Textbook|posts) constructed
+BEGIN (implicit)
+PRAGMA main.table_info("users")
+[raw sql] ()
+PRAGMA main.table_info("posts")
+[raw sql] ()
+COMMIT
+(User|users) _configure_property(username, Column)
+(User|users) _configure_property(password, Column)
+(User|users) Identified primary key columns: OrderedSet([Column('username', TEXT(), table=<users>, primary_key=True, nullable=False)])
+(User|users) constructed
+(Textbook|posts) _configure_property(title, Column)
+(Textbook|posts) _configure_property(topic, Column)
+(Textbook|posts) _configure_property(isbn, ColumnProperty)
+(Textbook|posts) _configure_property(owner_username, ColumnProperty)
+(Textbook|posts) _configure_property(id, Column)
+(Textbook|posts) _configure_property(course, ColumnProperty)
+(Textbook|posts) Identified primary key columns: OrderedSet([Column('id', INTEGER(), table=<posts>, primary_key=True, nullable=False)])
+(Textbook|posts) constructed
+BEGIN (implicit)
+PRAGMA main.table_info("users")
+[raw sql] ()
+PRAGMA main.table_info("posts")
+[raw sql] ()
+COMMIT
+(User|users) _post_configure_properties() started
+(User|users) initialize prop username
+(User|users) initialize prop password
+(User|users) _post_configure_properties() complete
+(Textbook|posts) _post_configure_properties() started
+(Textbook|posts) initialize prop title
+(Textbook|posts) initialize prop topic
+(Textbook|posts) initialize prop isbn
+(Textbook|posts) initialize prop owner_username
+(Textbook|posts) initialize prop id
+(Textbook|posts) initialize prop course
+(Textbook|posts) _post_configure_properties() complete
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[generated in 0.00015s] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 3.355s ago] ()
+(User|users) _configure_property(username, Column)
+(User|users) _configure_property(password, Column)
+(User|users) Identified primary key columns: OrderedSet([Column('username', TEXT(), table=<users>, primary_key=True, nullable=False)])
+(User|users) constructed
+(Textbook|posts) _configure_property(title, Column)
+(Textbook|posts) _configure_property(topic, Column)
+(Textbook|posts) _configure_property(isbn, ColumnProperty)
+(Textbook|posts) _configure_property(owner_username, ColumnProperty)
+(Textbook|posts) _configure_property(id, Column)
+(Textbook|posts) _configure_property(course, ColumnProperty)
+(Textbook|posts) Identified primary key columns: OrderedSet([Column('id', INTEGER(), table=<posts>, primary_key=True, nullable=False)])
+(Textbook|posts) constructed
+BEGIN (implicit)
+PRAGMA main.table_info("users")
+[raw sql] ()
+PRAGMA main.table_info("posts")
+[raw sql] ()
+COMMIT
+(User|users) _configure_property(username, Column)
+(User|users) _configure_property(password, Column)
+(User|users) Identified primary key columns: OrderedSet([Column('username', TEXT(), table=<users>, primary_key=True, nullable=False)])
+(User|users) constructed
+(Textbook|posts) _configure_property(title, Column)
+(Textbook|posts) _configure_property(topic, Column)
+(Textbook|posts) _configure_property(isbn, ColumnProperty)
+(Textbook|posts) _configure_property(owner_username, ColumnProperty)
+(Textbook|posts) _configure_property(id, Column)
+(Textbook|posts) _configure_property(course, ColumnProperty)
+(Textbook|posts) Identified primary key columns: OrderedSet([Column('id', INTEGER(), table=<posts>, primary_key=True, nullable=False)])
+(Textbook|posts) constructed
+BEGIN (implicit)
+PRAGMA main.table_info("users")
+[raw sql] ()
+PRAGMA main.table_info("posts")
+[raw sql] ()
+COMMIT
+(User|users) _configure_property(username, Column)
+(User|users) _configure_property(password, Column)
+(User|users) Identified primary key columns: OrderedSet([Column('username', TEXT(), table=<users>, primary_key=True, nullable=False)])
+(User|users) constructed
+(Textbook|posts) _configure_property(title, Column)
+(Textbook|posts) _configure_property(topic, Column)
+(Textbook|posts) _configure_property(isbn, ColumnProperty)
+(Textbook|posts) _configure_property(owner_username, ColumnProperty)
+(Textbook|posts) _configure_property(id, Column)
+(Textbook|posts) _configure_property(course, ColumnProperty)
+(Textbook|posts) Identified primary key columns: OrderedSet([Column('id', INTEGER(), table=<posts>, primary_key=True, nullable=False)])
+(Textbook|posts) constructed
+BEGIN (implicit)
+PRAGMA main.table_info("users")
+[raw sql] ()
+PRAGMA main.table_info("posts")
+[raw sql] ()
+COMMIT
+(User|users) _configure_property(username, Column)
+(User|users) _configure_property(password, Column)
+(User|users) Identified primary key columns: OrderedSet([Column('username', TEXT(), table=<users>, primary_key=True, nullable=False)])
+(User|users) constructed
+(Textbook|posts) _configure_property(title, Column)
+(Textbook|posts) _configure_property(topic, Column)
+(Textbook|posts) _configure_property(isbn, ColumnProperty)
+(Textbook|posts) _configure_property(owner_username, ColumnProperty)
+(Textbook|posts) _configure_property(id, Column)
+(Textbook|posts) _configure_property(course, ColumnProperty)
+(Textbook|posts) Identified primary key columns: OrderedSet([Column('id', INTEGER(), table=<posts>, primary_key=True, nullable=False)])
+(Textbook|posts) constructed
+BEGIN (implicit)
+PRAGMA main.table_info("users")
+[raw sql] ()
+PRAGMA main.table_info("posts")
+[raw sql] ()
+COMMIT
+(User|users) _post_configure_properties() started
+(User|users) initialize prop username
+(User|users) initialize prop password
+(User|users) _post_configure_properties() complete
+(Textbook|posts) _post_configure_properties() started
+(Textbook|posts) initialize prop title
+(Textbook|posts) initialize prop topic
+(Textbook|posts) initialize prop isbn
+(Textbook|posts) initialize prop owner_username
+(Textbook|posts) initialize prop id
+(Textbook|posts) initialize prop course
+(Textbook|posts) _post_configure_properties() complete
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[generated in 0.00026s] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 0.006118s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 6.802s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 6.806s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 10.77s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 13.32s ago] ()
+(User|users) _configure_property(username, Column)
+(User|users) _configure_property(password, Column)
+(User|users) Identified primary key columns: OrderedSet([Column('username', TEXT(), table=<users>, primary_key=True, nullable=False)])
+(User|users) constructed
+(Textbook|posts) _configure_property(title, Column)
+(Textbook|posts) _configure_property(topic, Column)
+(Textbook|posts) _configure_property(isbn, ColumnProperty)
+(Textbook|posts) _configure_property(owner_username, ColumnProperty)
+(Textbook|posts) _configure_property(id, Column)
+(Textbook|posts) _configure_property(course, ColumnProperty)
+(Textbook|posts) Identified primary key columns: OrderedSet([Column('id', INTEGER(), table=<posts>, primary_key=True, nullable=False)])
+(Textbook|posts) constructed
+BEGIN (implicit)
+PRAGMA main.table_info("users")
+[raw sql] ()
+PRAGMA main.table_info("posts")
+[raw sql] ()
+COMMIT
+(User|users) _post_configure_properties() started
+(User|users) initialize prop username
+(User|users) initialize prop password
+(User|users) _post_configure_properties() complete
+(Textbook|posts) _post_configure_properties() started
+(Textbook|posts) initialize prop title
+(Textbook|posts) initialize prop topic
+(Textbook|posts) initialize prop isbn
+(Textbook|posts) initialize prop owner_username
+(Textbook|posts) initialize prop id
+(Textbook|posts) initialize prop course
+(Textbook|posts) _post_configure_properties() complete
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[generated in 0.00022s] ()
+(User|users) _configure_property(username, Column)
+(User|users) _configure_property(password, Column)
+(User|users) Identified primary key columns: OrderedSet([Column('username', TEXT(), table=<users>, primary_key=True, nullable=False)])
+(User|users) constructed
+(Textbook|posts) _configure_property(title, Column)
+(Textbook|posts) _configure_property(topic, Column)
+(Textbook|posts) _configure_property(isbn, ColumnProperty)
+(Textbook|posts) _configure_property(owner_username, ColumnProperty)
+(Textbook|posts) _configure_property(id, Column)
+(Textbook|posts) _configure_property(course, ColumnProperty)
+(Textbook|posts) Identified primary key columns: OrderedSet([Column('id', INTEGER(), table=<posts>, primary_key=True, nullable=False)])
+(Textbook|posts) constructed
+BEGIN (implicit)
+PRAGMA main.table_info("users")
+[raw sql] ()
+PRAGMA main.table_info("posts")
+[raw sql] ()
+COMMIT
+(User|users) _configure_property(username, Column)
+(User|users) _configure_property(password, Column)
+(User|users) Identified primary key columns: OrderedSet([Column('username', TEXT(), table=<users>, primary_key=True, nullable=False)])
+(User|users) constructed
+(Textbook|posts) _configure_property(title, Column)
+(Textbook|posts) _configure_property(topic, Column)
+(Textbook|posts) _configure_property(isbn, ColumnProperty)
+(Textbook|posts) _configure_property(owner_username, ColumnProperty)
+(Textbook|posts) _configure_property(id, Column)
+(Textbook|posts) _configure_property(course, ColumnProperty)
+(Textbook|posts) Identified primary key columns: OrderedSet([Column('id', INTEGER(), table=<posts>, primary_key=True, nullable=False)])
+(Textbook|posts) constructed
+BEGIN (implicit)
+PRAGMA main.table_info("users")
+[raw sql] ()
+PRAGMA main.table_info("posts")
+[raw sql] ()
+COMMIT
+(User|users) _post_configure_properties() started
+(User|users) initialize prop username
+(User|users) initialize prop password
+(User|users) _post_configure_properties() complete
+(Textbook|posts) _post_configure_properties() started
+(Textbook|posts) initialize prop title
+(Textbook|posts) initialize prop topic
+(Textbook|posts) initialize prop isbn
+(Textbook|posts) initialize prop owner_username
+(Textbook|posts) initialize prop id
+(Textbook|posts) initialize prop course
+(Textbook|posts) _post_configure_properties() complete
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[generated in 0.00016s] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 0.005753s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 3.117s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 3.121s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 6.529s ago] ()
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.time = ?
+[generated in 0.00027s] ('MATH022',)
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 87.68s ago] ()
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.time = ?
+[cached since 81.15s ago] ('MATH022',)
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 90.71s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 90.72s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 243s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 243s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 246.1s ago] ()
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.time = ?
+[cached since 239.5s ago] ('MATH022',)
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 265.4s ago] ()
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.time = ?
+[cached since 258.8s ago] ('MATH022',)
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 271.2s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 332s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 351.6s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 375.7s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 375.8s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 380.4s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 380.6s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 393s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 394.7s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 412s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 414s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 415.6s ago] ()
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.time = ?
+[cached since 409.1s ago] ('MATH022',)
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 421.7s ago] ()
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.time = ?
+[cached since 415.1s ago] ('math 022',)
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 427.6s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 432.5s ago] ()
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.time = ?
+[cached since 426s ago] ('Math022',)
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 434.2s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 441.6s ago] ()
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.time = ?
+[cached since 435.1s ago] ('MATH022',)
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 461.9s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 471.9s ago] ()
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.time = ?
+[cached since 465.4s ago] ('MATH022',)
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 475.5s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 477.5s ago] ()
+BEGIN (implicit)
+INSERT INTO posts (title, topic, content, user_id, time) VALUES (?, ?, ?, ?, ?)
+[generated in 0.00034s] ('Business Communication: Developing Leaders for a Networked World', 'Business', '1260571351', 'map728@lehigh.edu', 'BUS 003')
+COMMIT
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 498.2s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 498.2s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 502.4s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 529.7s ago] ()
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.time = ?
+[cached since 523.2s ago] ('BUS 003',)
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 561.8s ago] ()
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.time = ?
+[cached since 555.3s ago] ('BUS 003',)
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 568.6s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 579.6s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 581s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 587.1s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 588.3s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 594.5s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 601s ago] ()
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.time = ?
+[cached since 594.5s ago] ('BUS 003',)
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 602.2s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 602.9s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 604s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 609.5s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 610.7s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 612.2s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 617.3s ago] ()
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.time = ?
+[cached since 610.8s ago] ('Math 022',)
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 619s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 619.6s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 619.7s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 620.6s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 622s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 622.2s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 625s ago] ()
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.time = ?
+[cached since 618.4s ago] ('MATH022',)
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 660.7s ago] ()
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.time = ?
+[cached since 654.2s ago] ('BUS 003',)
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 670.2s ago] ()
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.time = ?
+[cached since 663.6s ago] ('MATH022',)
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 672.8s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 672.8s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 683.4s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 683.4s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 685.9s ago] ()
+BEGIN (implicit)
+INSERT INTO posts (title, topic, content, user_id, time) VALUES (?, ?, ?, ?, ?)
+[cached since 207.7s ago] ('Calculus: Early Trancendentals', 'Calculus 2', '9781337613927', 'map728@lehigh.edu', 'MATH022')
+COMMIT
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 705.9s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 705.9s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 708.5s ago] ()
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.time = ?
+[cached since 702s ago] ('MATH022',)
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 746.8s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 751.6s ago] ()
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.time = ?
+[cached since 745.1s ago] ('BUS 003',)
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 754.6s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 754.6s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 1029s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 1029s ago] ()
+(User|users) _configure_property(username, Column)
+(User|users) _configure_property(password, Column)
+(User|users) Identified primary key columns: OrderedSet([Column('username', TEXT(), table=<users>, primary_key=True, nullable=False)])
+(User|users) constructed
+(Textbook|posts) _configure_property(title, Column)
+(Textbook|posts) _configure_property(topic, Column)
+(Textbook|posts) _configure_property(isbn, ColumnProperty)
+(Textbook|posts) _configure_property(owner_username, ColumnProperty)
+(Textbook|posts) _configure_property(id, Column)
+(Textbook|posts) _configure_property(course, ColumnProperty)
+(Textbook|posts) Identified primary key columns: OrderedSet([Column('id', INTEGER(), table=<posts>, primary_key=True, nullable=False)])
+(Textbook|posts) constructed
+BEGIN (implicit)
+PRAGMA main.table_info("users")
+[raw sql] ()
+PRAGMA main.table_info("posts")
+[raw sql] ()
+COMMIT
+(User|users) _configure_property(username, Column)
+(User|users) _configure_property(password, Column)
+(User|users) Identified primary key columns: OrderedSet([Column('username', TEXT(), table=<users>, primary_key=True, nullable=False)])
+(User|users) constructed
+(Textbook|posts) _configure_property(title, Column)
+(Textbook|posts) _configure_property(topic, Column)
+(Textbook|posts) _configure_property(isbn, ColumnProperty)
+(Textbook|posts) _configure_property(owner_username, ColumnProperty)
+(Textbook|posts) _configure_property(id, Column)
+(Textbook|posts) _configure_property(course, ColumnProperty)
+(Textbook|posts) Identified primary key columns: OrderedSet([Column('id', INTEGER(), table=<posts>, primary_key=True, nullable=False)])
+(Textbook|posts) constructed
+BEGIN (implicit)
+PRAGMA main.table_info("users")
+[raw sql] ()
+PRAGMA main.table_info("posts")
+[raw sql] ()
+COMMIT
+(User|users) _post_configure_properties() started
+(User|users) initialize prop username
+(User|users) initialize prop password
+(User|users) _post_configure_properties() complete
+(Textbook|posts) _post_configure_properties() started
+(Textbook|posts) initialize prop title
+(Textbook|posts) initialize prop topic
+(Textbook|posts) initialize prop isbn
+(Textbook|posts) initialize prop owner_username
+(Textbook|posts) initialize prop id
+(Textbook|posts) initialize prop course
+(Textbook|posts) _post_configure_properties() complete
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[generated in 0.00024s] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 0.007048s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 3.218s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 3.223s ago] ()
+BEGIN (implicit)
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.user_id = ?
+[generated in 0.00016s] ('nab628@lehigh.edu',)
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 8.247s ago] ()
+BEGIN (implicit)
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.user_id = ?
+[cached since 4.529s ago] ('nab628@lehigh.edu',)
+BEGIN (implicit)
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.user_id = ?
+[cached since 51.45s ago] ('nab628@lehigh.edu',)
+BEGIN (implicit)
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.user_id = ?
+[cached since 51.87s ago] ('nab628@lehigh.edu',)
+BEGIN (implicit)
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.user_id = ?
+[cached since 52.04s ago] ('nab628@lehigh.edu',)
+BEGIN (implicit)
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.user_id = ?
+[cached since 52.25s ago] ('nab628@lehigh.edu',)
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 77.14s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 77.15s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 80.94s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 80.94s ago] ()
+BEGIN (implicit)
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.user_id = ?
+[cached since 77.56s ago] ('map728@lehigh.edu',)
+(User|users) _configure_property(username, Column)
+(User|users) _configure_property(password, Column)
+(User|users) Identified primary key columns: OrderedSet([Column('username', TEXT(), table=<users>, primary_key=True, nullable=False)])
+(User|users) constructed
+(Textbook|posts) _configure_property(title, Column)
+(Textbook|posts) _configure_property(topic, Column)
+(Textbook|posts) _configure_property(isbn, ColumnProperty)
+(Textbook|posts) _configure_property(owner_username, ColumnProperty)
+(Textbook|posts) _configure_property(id, Column)
+(Textbook|posts) _configure_property(course, ColumnProperty)
+(Textbook|posts) Identified primary key columns: OrderedSet([Column('id', INTEGER(), table=<posts>, primary_key=True, nullable=False)])
+(Textbook|posts) constructed
+BEGIN (implicit)
+PRAGMA main.table_info("users")
+[raw sql] ()
+PRAGMA main.table_info("posts")
+[raw sql] ()
+COMMIT
+(User|users) _post_configure_properties() started
+(User|users) initialize prop username
+(User|users) initialize prop password
+(User|users) _post_configure_properties() complete
+(Textbook|posts) _post_configure_properties() started
+(Textbook|posts) initialize prop title
+(Textbook|posts) initialize prop topic
+(Textbook|posts) initialize prop isbn
+(Textbook|posts) initialize prop owner_username
+(Textbook|posts) initialize prop id
+(Textbook|posts) initialize prop course
+(Textbook|posts) _post_configure_properties() complete
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[generated in 0.00028s] ()
+BEGIN (implicit)
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.user_id = ?
+[generated in 0.00026s] ('map728@lehigh.edu',)
+BEGIN (implicit)
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.user_id = ?
+[cached since 11.59s ago] ('map728@lehigh.edu',)
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 124.6s ago] ()
+BEGIN (implicit)
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.user_id = ?
+[cached since 126s ago] ('map728@lehigh.edu',)
+(User|users) _configure_property(username, Column)
+(User|users) _configure_property(password, Column)
+(User|users) Identified primary key columns: OrderedSet([Column('username', TEXT(), table=<users>, primary_key=True, nullable=False)])
+(User|users) constructed
+(Textbook|posts) _configure_property(title, Column)
+(Textbook|posts) _configure_property(topic, Column)
+(Textbook|posts) _configure_property(isbn, ColumnProperty)
+(Textbook|posts) _configure_property(owner_username, ColumnProperty)
+(Textbook|posts) _configure_property(id, Column)
+(Textbook|posts) _configure_property(course, ColumnProperty)
+(Textbook|posts) Identified primary key columns: OrderedSet([Column('id', INTEGER(), table=<posts>, primary_key=True, nullable=False)])
+(Textbook|posts) constructed
+BEGIN (implicit)
+PRAGMA main.table_info("users")
+[raw sql] ()
+PRAGMA main.table_info("posts")
+[raw sql] ()
+COMMIT
+(User|users) _configure_property(username, Column)
+(User|users) _configure_property(password, Column)
+(User|users) Identified primary key columns: OrderedSet([Column('username', TEXT(), table=<users>, primary_key=True, nullable=False)])
+(User|users) constructed
+(Textbook|posts) _configure_property(title, Column)
+(Textbook|posts) _configure_property(topic, Column)
+(Textbook|posts) _configure_property(isbn, ColumnProperty)
+(Textbook|posts) _configure_property(owner_username, ColumnProperty)
+(Textbook|posts) _configure_property(id, Column)
+(Textbook|posts) _configure_property(course, ColumnProperty)
+(Textbook|posts) Identified primary key columns: OrderedSet([Column('id', INTEGER(), table=<posts>, primary_key=True, nullable=False)])
+(Textbook|posts) constructed
+BEGIN (implicit)
+PRAGMA main.table_info("users")
+[raw sql] ()
+PRAGMA main.table_info("posts")
+[raw sql] ()
+COMMIT
+(User|users) _post_configure_properties() started
+(User|users) initialize prop username
+(User|users) initialize prop password
+(User|users) _post_configure_properties() complete
+(Textbook|posts) _post_configure_properties() started
+(Textbook|posts) initialize prop title
+(Textbook|posts) initialize prop topic
+(Textbook|posts) initialize prop isbn
+(Textbook|posts) initialize prop owner_username
+(Textbook|posts) initialize prop id
+(Textbook|posts) initialize prop course
+(Textbook|posts) _post_configure_properties() complete
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[generated in 0.00015s] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 1.788s ago] ()
+BEGIN (implicit)
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.user_id = ?
+[generated in 0.00022s] ('aaa',)
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 6.49s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 6.494s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 10.9s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 10.9s ago] ()
+BEGIN (implicit)
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.user_id = ?
+[cached since 8.574s ago] ('map728@lehigh.edu',)
+BEGIN (implicit)
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.user_id = ?
+[cached since 34.64s ago] ('map728@lehigh.edu',)
+BEGIN (implicit)
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.user_id = ?
+[cached since 34.82s ago] ('map728@lehigh.edu',)
+(User|users) _configure_property(username, Column)
+(User|users) _configure_property(password, Column)
+(User|users) Identified primary key columns: OrderedSet([Column('username', TEXT(), table=<users>, primary_key=True, nullable=False)])
+(User|users) constructed
+(Textbook|posts) _configure_property(title, Column)
+(Textbook|posts) _configure_property(topic, Column)
+(Textbook|posts) _configure_property(isbn, ColumnProperty)
+(Textbook|posts) _configure_property(owner_username, ColumnProperty)
+(Textbook|posts) _configure_property(id, Column)
+(Textbook|posts) _configure_property(course, ColumnProperty)
+(Textbook|posts) Identified primary key columns: OrderedSet([Column('id', INTEGER(), table=<posts>, primary_key=True, nullable=False)])
+(Textbook|posts) constructed
+BEGIN (implicit)
+PRAGMA main.table_info("users")
+[raw sql] ()
+PRAGMA main.table_info("posts")
+[raw sql] ()
+COMMIT
+(User|users) _configure_property(username, Column)
+(User|users) _configure_property(password, Column)
+(User|users) Identified primary key columns: OrderedSet([Column('username', TEXT(), table=<users>, primary_key=True, nullable=False)])
+(User|users) constructed
+(Textbook|posts) _configure_property(title, Column)
+(Textbook|posts) _configure_property(topic, Column)
+(Textbook|posts) _configure_property(isbn, ColumnProperty)
+(Textbook|posts) _configure_property(owner_username, ColumnProperty)
+(Textbook|posts) _configure_property(id, Column)
+(Textbook|posts) _configure_property(course, ColumnProperty)
+(Textbook|posts) Identified primary key columns: OrderedSet([Column('id', INTEGER(), table=<posts>, primary_key=True, nullable=False)])
+(Textbook|posts) constructed
+BEGIN (implicit)
+PRAGMA main.table_info("users")
+[raw sql] ()
+PRAGMA main.table_info("posts")
+[raw sql] ()
+COMMIT
+(User|users) _configure_property(username, Column)
+(User|users) _configure_property(password, Column)
+(User|users) Identified primary key columns: OrderedSet([Column('username', TEXT(), table=<users>, primary_key=True, nullable=False)])
+(User|users) constructed
+(Textbook|posts) _configure_property(title, Column)
+(Textbook|posts) _configure_property(topic, Column)
+(Textbook|posts) _configure_property(isbn, ColumnProperty)
+(Textbook|posts) _configure_property(owner_username, ColumnProperty)
+(Textbook|posts) _configure_property(id, Column)
+(Textbook|posts) _configure_property(course, ColumnProperty)
+(Textbook|posts) Identified primary key columns: OrderedSet([Column('id', INTEGER(), table=<posts>, primary_key=True, nullable=False)])
+(Textbook|posts) constructed
+BEGIN (implicit)
+PRAGMA main.table_info("users")
+[raw sql] ()
+PRAGMA main.table_info("posts")
+[raw sql] ()
+COMMIT
+(User|users) _post_configure_properties() started
+(User|users) initialize prop username
+(User|users) initialize prop password
+(User|users) _post_configure_properties() complete
+(Textbook|posts) _post_configure_properties() started
+(Textbook|posts) initialize prop title
+(Textbook|posts) initialize prop topic
+(Textbook|posts) initialize prop isbn
+(Textbook|posts) initialize prop owner_username
+(Textbook|posts) initialize prop id
+(Textbook|posts) initialize prop course
+(Textbook|posts) _post_configure_properties() complete
+BEGIN (implicit)
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.user_id = ?
+[generated in 0.00025s] ('map728@lehigh.edu',)
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[generated in 0.00030s] ()
+BEGIN (implicit)
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.user_id = ?
+[cached since 3.212s ago] ('map728@lehigh.edu',)
+BEGIN (implicit)
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.user_id = ?
+[cached since 13.66s ago] ('map728@lehigh.edu',)
+(User|users) _configure_property(username, Column)
+(User|users) _configure_property(password, Column)
+(User|users) Identified primary key columns: OrderedSet([Column('username', TEXT(), table=<users>, primary_key=True, nullable=False)])
+(User|users) constructed
+(Textbook|posts) _configure_property(title, Column)
+(Textbook|posts) _configure_property(topic, Column)
+(Textbook|posts) _configure_property(isbn, ColumnProperty)
+(Textbook|posts) _configure_property(owner_username, ColumnProperty)
+(Textbook|posts) _configure_property(id, Column)
+(Textbook|posts) _configure_property(course, ColumnProperty)
+(Textbook|posts) Identified primary key columns: OrderedSet([Column('id', INTEGER(), table=<posts>, primary_key=True, nullable=False)])
+(Textbook|posts) constructed
+BEGIN (implicit)
+PRAGMA main.table_info("users")
+[raw sql] ()
+PRAGMA main.table_info("posts")
+[raw sql] ()
+COMMIT
+(User|users) _configure_property(username, Column)
+(User|users) _configure_property(password, Column)
+(User|users) Identified primary key columns: OrderedSet([Column('username', TEXT(), table=<users>, primary_key=True, nullable=False)])
+(User|users) constructed
+(Textbook|posts) _configure_property(title, Column)
+(Textbook|posts) _configure_property(topic, Column)
+(Textbook|posts) _configure_property(isbn, ColumnProperty)
+(Textbook|posts) _configure_property(owner_username, ColumnProperty)
+(Textbook|posts) _configure_property(id, Column)
+(Textbook|posts) _configure_property(course, ColumnProperty)
+(Textbook|posts) Identified primary key columns: OrderedSet([Column('id', INTEGER(), table=<posts>, primary_key=True, nullable=False)])
+(Textbook|posts) constructed
+BEGIN (implicit)
+PRAGMA main.table_info("users")
+[raw sql] ()
+PRAGMA main.table_info("posts")
+[raw sql] ()
+COMMIT
+(User|users) _post_configure_properties() started
+(User|users) initialize prop username
+(User|users) initialize prop password
+(User|users) _post_configure_properties() complete
+(Textbook|posts) _post_configure_properties() started
+(Textbook|posts) initialize prop title
+(Textbook|posts) initialize prop topic
+(Textbook|posts) initialize prop isbn
+(Textbook|posts) initialize prop owner_username
+(Textbook|posts) initialize prop id
+(Textbook|posts) initialize prop course
+(Textbook|posts) _post_configure_properties() complete
+BEGIN (implicit)
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.user_id = ?
+[generated in 0.00035s] ('map728@lehigh.edu',)
+(User|users) _configure_property(username, Column)
+(User|users) _configure_property(password, Column)
+(User|users) Identified primary key columns: OrderedSet([Column('username', TEXT(), table=<users>, primary_key=True, nullable=False)])
+(User|users) constructed
+(Textbook|posts) _configure_property(title, Column)
+(Textbook|posts) _configure_property(topic, Column)
+(Textbook|posts) _configure_property(isbn, ColumnProperty)
+(Textbook|posts) _configure_property(owner_username, ColumnProperty)
+(Textbook|posts) _configure_property(id, Column)
+(Textbook|posts) _configure_property(course, ColumnProperty)
+(Textbook|posts) Identified primary key columns: OrderedSet([Column('id', INTEGER(), table=<posts>, primary_key=True, nullable=False)])
+(Textbook|posts) constructed
+BEGIN (implicit)
+PRAGMA main.table_info("users")
+[raw sql] ()
+PRAGMA main.table_info("posts")
+[raw sql] ()
+COMMIT
+(User|users) _configure_property(username, Column)
+(User|users) _configure_property(password, Column)
+(User|users) Identified primary key columns: OrderedSet([Column('username', TEXT(), table=<users>, primary_key=True, nullable=False)])
+(User|users) constructed
+(Textbook|posts) _configure_property(title, Column)
+(Textbook|posts) _configure_property(topic, Column)
+(Textbook|posts) _configure_property(isbn, ColumnProperty)
+(Textbook|posts) _configure_property(owner_username, ColumnProperty)
+(Textbook|posts) _configure_property(id, Column)
+(Textbook|posts) _configure_property(course, ColumnProperty)
+(Textbook|posts) Identified primary key columns: OrderedSet([Column('id', INTEGER(), table=<posts>, primary_key=True, nullable=False)])
+(Textbook|posts) constructed
+BEGIN (implicit)
+PRAGMA main.table_info("users")
+[raw sql] ()
+PRAGMA main.table_info("posts")
+[raw sql] ()
+COMMIT
+(User|users) _configure_property(username, Column)
+(User|users) _configure_property(password, Column)
+(User|users) Identified primary key columns: OrderedSet([Column('username', TEXT(), table=<users>, primary_key=True, nullable=False)])
+(User|users) constructed
+(Textbook|posts) _configure_property(title, Column)
+(Textbook|posts) _configure_property(topic, Column)
+(Textbook|posts) _configure_property(isbn, ColumnProperty)
+(Textbook|posts) _configure_property(owner_username, ColumnProperty)
+(Textbook|posts) _configure_property(id, Column)
+(Textbook|posts) _configure_property(course, ColumnProperty)
+(Textbook|posts) Identified primary key columns: OrderedSet([Column('id', INTEGER(), table=<posts>, primary_key=True, nullable=False)])
+(Textbook|posts) constructed
+BEGIN (implicit)
+PRAGMA main.table_info("users")
+[raw sql] ()
+PRAGMA main.table_info("posts")
+[raw sql] ()
+COMMIT
+(User|users) _configure_property(username, Column)
+(User|users) _configure_property(password, Column)
+(User|users) Identified primary key columns: OrderedSet([Column('username', TEXT(), table=<users>, primary_key=True, nullable=False)])
+(User|users) constructed
+(Textbook|posts) _configure_property(title, Column)
+(Textbook|posts) _configure_property(topic, Column)
+(Textbook|posts) _configure_property(isbn, ColumnProperty)
+(Textbook|posts) _configure_property(owner_username, ColumnProperty)
+(Textbook|posts) _configure_property(id, Column)
+(Textbook|posts) _configure_property(course, ColumnProperty)
+(Textbook|posts) Identified primary key columns: OrderedSet([Column('id', INTEGER(), table=<posts>, primary_key=True, nullable=False)])
+(Textbook|posts) constructed
+BEGIN (implicit)
+PRAGMA main.table_info("users")
+[raw sql] ()
+PRAGMA main.table_info("posts")
+[raw sql] ()
+COMMIT
+(User|users) _configure_property(username, Column)
+(User|users) _configure_property(password, Column)
+(User|users) Identified primary key columns: OrderedSet([Column('username', TEXT(), table=<users>, primary_key=True, nullable=False)])
+(User|users) constructed
+(Textbook|posts) _configure_property(title, Column)
+(Textbook|posts) _configure_property(topic, Column)
+(Textbook|posts) _configure_property(isbn, ColumnProperty)
+(Textbook|posts) _configure_property(owner_username, ColumnProperty)
+(Textbook|posts) _configure_property(id, Column)
+(Textbook|posts) _configure_property(course, ColumnProperty)
+(Textbook|posts) Identified primary key columns: OrderedSet([Column('id', INTEGER(), table=<posts>, primary_key=True, nullable=False)])
+(Textbook|posts) constructed
+BEGIN (implicit)
+PRAGMA main.table_info("users")
+[raw sql] ()
+PRAGMA main.table_info("posts")
+[raw sql] ()
+COMMIT
+(User|users) _post_configure_properties() started
+(User|users) initialize prop username
+(User|users) initialize prop password
+(User|users) _post_configure_properties() complete
+(Textbook|posts) _post_configure_properties() started
+(Textbook|posts) initialize prop title
+(Textbook|posts) initialize prop topic
+(Textbook|posts) initialize prop isbn
+(Textbook|posts) initialize prop owner_username
+(Textbook|posts) initialize prop id
+(Textbook|posts) initialize prop course
+(Textbook|posts) _post_configure_properties() complete
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[generated in 0.00038s] ()
+BEGIN (implicit)
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.user_id = ?
+[generated in 0.00020s] ('map728@lehigh.edu',)
+BEGIN (implicit)
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.user_id = ?
+[cached since 25.54s ago] ('map728@lehigh.edu',)
+BEGIN (implicit)
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.user_id = ?
+[cached since 26.18s ago] ('map728@lehigh.edu',)
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 29.02s ago] ()
+BEGIN (implicit)
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.user_id = ?
+[cached since 29.18s ago] ('map728@lehigh.edu',)
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 64.72s ago] ()
+BEGIN (implicit)
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.user_id = ?
+[cached since 64.73s ago] ('map728@lehigh.edu',)
+(User|users) _configure_property(username, Column)
+(User|users) _configure_property(password, Column)
+(User|users) Identified primary key columns: OrderedSet([Column('username', TEXT(), table=<users>, primary_key=True, nullable=False)])
+(User|users) constructed
+(Textbook|posts) _configure_property(title, Column)
+(Textbook|posts) _configure_property(topic, Column)
+(Textbook|posts) _configure_property(isbn, ColumnProperty)
+(Textbook|posts) _configure_property(owner_username, ColumnProperty)
+(Textbook|posts) _configure_property(id, Column)
+(Textbook|posts) _configure_property(course, ColumnProperty)
+(Textbook|posts) Identified primary key columns: OrderedSet([Column('id', INTEGER(), table=<posts>, primary_key=True, nullable=False)])
+(Textbook|posts) constructed
+BEGIN (implicit)
+PRAGMA main.table_info("users")
+[raw sql] ()
+PRAGMA main.table_info("posts")
+[raw sql] ()
+COMMIT
+(User|users) _configure_property(username, Column)
+(User|users) _configure_property(password, Column)
+(User|users) Identified primary key columns: OrderedSet([Column('username', TEXT(), table=<users>, primary_key=True, nullable=False)])
+(User|users) constructed
+(Textbook|posts) _configure_property(title, Column)
+(Textbook|posts) _configure_property(topic, Column)
+(Textbook|posts) _configure_property(isbn, ColumnProperty)
+(Textbook|posts) _configure_property(owner_username, ColumnProperty)
+(Textbook|posts) _configure_property(id, Column)
+(Textbook|posts) _configure_property(course, ColumnProperty)
+(Textbook|posts) Identified primary key columns: OrderedSet([Column('id', INTEGER(), table=<posts>, primary_key=True, nullable=False)])
+(Textbook|posts) constructed
+BEGIN (implicit)
+PRAGMA main.table_info("users")
+[raw sql] ()
+PRAGMA main.table_info("posts")
+[raw sql] ()
+COMMIT
+(User|users) _configure_property(username, Column)
+(User|users) _configure_property(password, Column)
+(User|users) Identified primary key columns: OrderedSet([Column('username', TEXT(), table=<users>, primary_key=True, nullable=False)])
+(User|users) constructed
+(Textbook|posts) _configure_property(title, Column)
+(Textbook|posts) _configure_property(topic, Column)
+(Textbook|posts) _configure_property(isbn, ColumnProperty)
+(Textbook|posts) _configure_property(owner_username, ColumnProperty)
+(Textbook|posts) _configure_property(id, Column)
+(Textbook|posts) _configure_property(course, ColumnProperty)
+(Textbook|posts) Identified primary key columns: OrderedSet([Column('id', INTEGER(), table=<posts>, primary_key=True, nullable=False)])
+(Textbook|posts) constructed
+BEGIN (implicit)
+PRAGMA main.table_info("users")
+[raw sql] ()
+PRAGMA main.table_info("posts")
+[raw sql] ()
+COMMIT
+(User|users) _configure_property(username, Column)
+(User|users) _configure_property(password, Column)
+(User|users) Identified primary key columns: OrderedSet([Column('username', TEXT(), table=<users>, primary_key=True, nullable=False)])
+(User|users) constructed
+(Textbook|posts) _configure_property(title, Column)
+(Textbook|posts) _configure_property(topic, Column)
+(Textbook|posts) _configure_property(isbn, ColumnProperty)
+(Textbook|posts) _configure_property(owner_username, ColumnProperty)
+(Textbook|posts) _configure_property(id, Column)
+(Textbook|posts) _configure_property(course, ColumnProperty)
+(Textbook|posts) Identified primary key columns: OrderedSet([Column('id', INTEGER(), table=<posts>, primary_key=True, nullable=False)])
+(Textbook|posts) constructed
+BEGIN (implicit)
+PRAGMA main.table_info("users")
+[raw sql] ()
+PRAGMA main.table_info("posts")
+[raw sql] ()
+COMMIT
+(User|users) _configure_property(username, Column)
+(User|users) _configure_property(password, Column)
+(User|users) Identified primary key columns: OrderedSet([Column('username', TEXT(), table=<users>, primary_key=True, nullable=False)])
+(User|users) constructed
+(Textbook|posts) _configure_property(title, Column)
+(Textbook|posts) _configure_property(topic, Column)
+(Textbook|posts) _configure_property(isbn, ColumnProperty)
+(Textbook|posts) _configure_property(owner_username, ColumnProperty)
+(Textbook|posts) _configure_property(id, Column)
+(Textbook|posts) _configure_property(course, ColumnProperty)
+(Textbook|posts) Identified primary key columns: OrderedSet([Column('id', INTEGER(), table=<posts>, primary_key=True, nullable=False)])
+(Textbook|posts) constructed
+BEGIN (implicit)
+PRAGMA main.table_info("users")
+[raw sql] ()
+PRAGMA main.table_info("posts")
+[raw sql] ()
+COMMIT
+(User|users) _post_configure_properties() started
+(User|users) initialize prop username
+(User|users) initialize prop password
+(User|users) _post_configure_properties() complete
+(Textbook|posts) _post_configure_properties() started
+(Textbook|posts) initialize prop title
+(Textbook|posts) initialize prop topic
+(Textbook|posts) initialize prop isbn
+(Textbook|posts) initialize prop owner_username
+(Textbook|posts) initialize prop id
+(Textbook|posts) initialize prop course
+(Textbook|posts) _post_configure_properties() complete
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[generated in 0.00032s] ()
+BEGIN (implicit)
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.user_id = ?
+[generated in 0.00018s] ('map728@lehigh.edu',)
+(User|users) _configure_property(username, Column)
+(User|users) _configure_property(password, Column)
+(User|users) Identified primary key columns: OrderedSet([Column('username', TEXT(), table=<users>, primary_key=True, nullable=False)])
+(User|users) constructed
+(Textbook|posts) _configure_property(title, Column)
+(Textbook|posts) _configure_property(topic, Column)
+(Textbook|posts) _configure_property(isbn, ColumnProperty)
+(Textbook|posts) _configure_property(owner_username, ColumnProperty)
+(Textbook|posts) _configure_property(id, Column)
+(Textbook|posts) _configure_property(course, ColumnProperty)
+(Textbook|posts) Identified primary key columns: OrderedSet([Column('id', INTEGER(), table=<posts>, primary_key=True, nullable=False)])
+(Textbook|posts) constructed
+BEGIN (implicit)
+PRAGMA main.table_info("users")
+[raw sql] ()
+PRAGMA main.table_info("posts")
+[raw sql] ()
+COMMIT
+(User|users) _post_configure_properties() started
+(User|users) initialize prop username
+(User|users) initialize prop password
+(User|users) _post_configure_properties() complete
+(Textbook|posts) _post_configure_properties() started
+(Textbook|posts) initialize prop title
+(Textbook|posts) initialize prop topic
+(Textbook|posts) initialize prop isbn
+(Textbook|posts) initialize prop owner_username
+(Textbook|posts) initialize prop id
+(Textbook|posts) initialize prop course
+(Textbook|posts) _post_configure_properties() complete
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[generated in 0.00023s] ()
+BEGIN (implicit)
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.user_id = ?
+[generated in 0.00034s] ('map728@lehigh.edu',)
+(User|users) _configure_property(username, Column)
+(User|users) _configure_property(password, Column)
+(User|users) Identified primary key columns: OrderedSet([Column('username', TEXT(), table=<users>, primary_key=True, nullable=False)])
+(User|users) constructed
+(Textbook|posts) _configure_property(title, Column)
+(Textbook|posts) _configure_property(topic, Column)
+(Textbook|posts) _configure_property(isbn, ColumnProperty)
+(Textbook|posts) _configure_property(owner_username, ColumnProperty)
+(Textbook|posts) _configure_property(id, Column)
+(Textbook|posts) _configure_property(course, ColumnProperty)
+(Textbook|posts) Identified primary key columns: OrderedSet([Column('id', INTEGER(), table=<posts>, primary_key=True, nullable=False)])
+(Textbook|posts) constructed
+BEGIN (implicit)
+PRAGMA main.table_info("users")
+[raw sql] ()
+PRAGMA main.table_info("posts")
+[raw sql] ()
+COMMIT
+(User|users) _post_configure_properties() started
+(User|users) initialize prop username
+(User|users) initialize prop password
+(User|users) _post_configure_properties() complete
+(Textbook|posts) _post_configure_properties() started
+(Textbook|posts) initialize prop title
+(Textbook|posts) initialize prop topic
+(Textbook|posts) initialize prop isbn
+(Textbook|posts) initialize prop owner_username
+(Textbook|posts) initialize prop id
+(Textbook|posts) initialize prop course
+(Textbook|posts) _post_configure_properties() complete
+BEGIN (implicit)
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.user_id = ?
+[generated in 0.00037s] ('map728@lehigh.edu',)
+BEGIN (implicit)
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.content = ? AND posts.user_id = ?
+ LIMIT ? OFFSET ?
+[generated in 0.00024s] ('1260571351', 'map728@lehigh.edu', 1, 0)
+DELETE FROM posts WHERE posts.id = ?
+[generated in 0.00020s] (2,)
+COMMIT
+BEGIN (implicit)
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.user_id = ?
+[cached since 0.9634s ago] ('map728@lehigh.edu',)
+(User|users) _configure_property(username, Column)
+(User|users) _configure_property(password, Column)
+(User|users) Identified primary key columns: OrderedSet([Column('username', TEXT(), table=<users>, primary_key=True, nullable=False)])
+(User|users) constructed
+(Textbook|posts) _configure_property(title, Column)
+(Textbook|posts) _configure_property(topic, Column)
+(Textbook|posts) _configure_property(isbn, ColumnProperty)
+(Textbook|posts) _configure_property(owner_username, ColumnProperty)
+(Textbook|posts) _configure_property(id, Column)
+(Textbook|posts) _configure_property(course, ColumnProperty)
+(Textbook|posts) Identified primary key columns: OrderedSet([Column('id', INTEGER(), table=<posts>, primary_key=True, nullable=False)])
+(Textbook|posts) constructed
+BEGIN (implicit)
+PRAGMA main.table_info("users")
+[raw sql] ()
+PRAGMA main.table_info("posts")
+[raw sql] ()
+COMMIT
+(User|users) _configure_property(username, Column)
+(User|users) _configure_property(password, Column)
+(User|users) Identified primary key columns: OrderedSet([Column('username', TEXT(), table=<users>, primary_key=True, nullable=False)])
+(User|users) constructed
+(Textbook|posts) _configure_property(title, Column)
+(Textbook|posts) _configure_property(topic, Column)
+(Textbook|posts) _configure_property(isbn, ColumnProperty)
+(Textbook|posts) _configure_property(owner_username, ColumnProperty)
+(Textbook|posts) _configure_property(id, Column)
+(Textbook|posts) _configure_property(course, ColumnProperty)
+(Textbook|posts) Identified primary key columns: OrderedSet([Column('id', INTEGER(), table=<posts>, primary_key=True, nullable=False)])
+(Textbook|posts) constructed
+BEGIN (implicit)
+PRAGMA main.table_info("users")
+[raw sql] ()
+PRAGMA main.table_info("posts")
+[raw sql] ()
+COMMIT
+(User|users) _configure_property(username, Column)
+(User|users) _configure_property(password, Column)
+(User|users) Identified primary key columns: OrderedSet([Column('username', TEXT(), table=<users>, primary_key=True, nullable=False)])
+(User|users) constructed
+(Textbook|posts) _configure_property(title, Column)
+(Textbook|posts) _configure_property(topic, Column)
+(Textbook|posts) _configure_property(isbn, ColumnProperty)
+(Textbook|posts) _configure_property(owner_username, ColumnProperty)
+(Textbook|posts) _configure_property(id, Column)
+(Textbook|posts) _configure_property(course, ColumnProperty)
+(Textbook|posts) Identified primary key columns: OrderedSet([Column('id', INTEGER(), table=<posts>, primary_key=True, nullable=False)])
+(Textbook|posts) constructed
+BEGIN (implicit)
+PRAGMA main.table_info("users")
+[raw sql] ()
+PRAGMA main.table_info("posts")
+[raw sql] ()
+COMMIT
+(User|users) _configure_property(username, Column)
+(User|users) _configure_property(password, Column)
+(User|users) Identified primary key columns: OrderedSet([Column('username', TEXT(), table=<users>, primary_key=True, nullable=False)])
+(User|users) constructed
+(Textbook|posts) _configure_property(title, Column)
+(Textbook|posts) _configure_property(topic, Column)
+(Textbook|posts) _configure_property(isbn, ColumnProperty)
+(Textbook|posts) _configure_property(owner_username, ColumnProperty)
+(Textbook|posts) _configure_property(id, Column)
+(Textbook|posts) _configure_property(course, ColumnProperty)
+(Textbook|posts) Identified primary key columns: OrderedSet([Column('id', INTEGER(), table=<posts>, primary_key=True, nullable=False)])
+(Textbook|posts) constructed
+BEGIN (implicit)
+PRAGMA main.table_info("users")
+[raw sql] ()
+PRAGMA main.table_info("posts")
+[raw sql] ()
+COMMIT
+(User|users) _configure_property(username, Column)
+(User|users) _configure_property(password, Column)
+(User|users) Identified primary key columns: OrderedSet([Column('username', TEXT(), table=<users>, primary_key=True, nullable=False)])
+(User|users) constructed
+(Textbook|posts) _configure_property(title, Column)
+(Textbook|posts) _configure_property(topic, Column)
+(Textbook|posts) _configure_property(isbn, ColumnProperty)
+(Textbook|posts) _configure_property(owner_username, ColumnProperty)
+(Textbook|posts) _configure_property(id, Column)
+(Textbook|posts) _configure_property(course, ColumnProperty)
+(Textbook|posts) Identified primary key columns: OrderedSet([Column('id', INTEGER(), table=<posts>, primary_key=True, nullable=False)])
+(Textbook|posts) constructed
+BEGIN (implicit)
+PRAGMA main.table_info("users")
+[raw sql] ()
+PRAGMA main.table_info("posts")
+[raw sql] ()
+COMMIT
+(User|users) _configure_property(username, Column)
+(User|users) _configure_property(password, Column)
+(User|users) Identified primary key columns: OrderedSet([Column('username', TEXT(), table=<users>, primary_key=True, nullable=False)])
+(User|users) constructed
+(Textbook|posts) _configure_property(title, Column)
+(Textbook|posts) _configure_property(topic, Column)
+(Textbook|posts) _configure_property(isbn, ColumnProperty)
+(Textbook|posts) _configure_property(owner_username, ColumnProperty)
+(Textbook|posts) _configure_property(id, Column)
+(Textbook|posts) _configure_property(course, ColumnProperty)
+(Textbook|posts) Identified primary key columns: OrderedSet([Column('id', INTEGER(), table=<posts>, primary_key=True, nullable=False)])
+(Textbook|posts) constructed
+BEGIN (implicit)
+PRAGMA main.table_info("users")
+[raw sql] ()
+PRAGMA main.table_info("posts")
+[raw sql] ()
+COMMIT
+(User|users) _configure_property(username, Column)
+(User|users) _configure_property(password, Column)
+(User|users) Identified primary key columns: OrderedSet([Column('username', TEXT(), table=<users>, primary_key=True, nullable=False)])
+(User|users) constructed
+(Textbook|posts) _configure_property(title, Column)
+(Textbook|posts) _configure_property(topic, Column)
+(Textbook|posts) _configure_property(isbn, ColumnProperty)
+(Textbook|posts) _configure_property(owner_username, ColumnProperty)
+(Textbook|posts) _configure_property(id, Column)
+(Textbook|posts) _configure_property(course, ColumnProperty)
+(Textbook|posts) Identified primary key columns: OrderedSet([Column('id', INTEGER(), table=<posts>, primary_key=True, nullable=False)])
+(Textbook|posts) constructed
+BEGIN (implicit)
+PRAGMA main.table_info("users")
+[raw sql] ()
+PRAGMA main.table_info("posts")
+[raw sql] ()
+COMMIT

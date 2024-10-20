@@ -1,1 +1,5 @@
-# hackathon24
+# Lehigh-Valley-Hackathon
+
+Our project is to make a website that allows students to be able to access textbooks at a much more affordable cost. Although Lehigh has the sytsem of Learning Unlimited for $375, there are still some students to who this price may be unaffordable. Furthermore, some classes don't requrire textbooks so this cost of $375 would simply be unnecessary. 
+
+Our plan is to create a website that has two users, people that are looking to upload textbooks and others that are looking to access textbooks. We will prompt users to log in with their Lehigh.edu email, and if they are not able to do that then they can not acces the site. Following that, they will be prompoted whether they are someone looking to access a textbook, or upload a textbook. Uploaders will then be taken to a page in which they can import their textbook file, the class the textbook is used for, and any other additional information they think may be helpful. We plan to use some sort of database to store all of these inputs in. The people that are looking to access the textbooks should be prompted to the home page in which they will enter the specific class they are looking for, or the textbook name, and related search results could pop up. 

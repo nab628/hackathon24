@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f3e0;
+    color: #3e2723; /* Dark brown text */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #6d4c41; /* Medium brown */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.profile-info,
+.post-book,
+.past-posts {
+    background-color: #d7ccc8; /* Light brown */
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+h2 {
+    color: #4e342e; /* Darker brown for headings */
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #a1887f; /* Lighter brown */
+    border-radius: 5px;
+}
+
+button {
+    background-color: #795548; /* Brown button */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #6d4c41; /* Darker brown on hover */
+}
+
+.past-posts ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.past-posts li {
+    background-color: #efebe9; /* Very light brown */
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #6d4c41;
+    color: white;
+}
