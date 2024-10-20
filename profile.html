@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/profile.css')}}">
+    
+    <title>User Profile</title>
+  </head>
+  <body>
+    <header>
+      <h1>User Profile</h1>
+      <nav>
+        <a href="/logout">Logout</a>
+        <a href="/newpost">List a textbook</a>
+        <a href="/home">Find a textbook</a>
+        <a href="/profile">Profile</a>
+    </nav>
+    </header>
+
+    <main>
+      <section class="profile-info">
+        <h2>Your Profile</h2>
+        <p>Email: <strong>{{session["username"]}}</strong></p>
+      </section>
+      <h3>My Textbooks</h3>
+      {% if textbooks %}
+            <ul class="textbook-list">
+                {% for textbook in textbooks %}
+                    <li class="textbook-item">
+                        <div class="textbook-title">{{ textbook.title }}</div>
+                        <div class="textbook-details">
+                            ISBN: {{ textbook.isbn }}<br>
+                            Course: {{ textbook.course }}<br>
+                            <form id="deleteForm" action="/delete" method="POST" style="display: inline;">
+                              <input type=hidden value="{{ textbook.isbn }}" name=isbn />
+                              <input type=hidden value="{{ textbook.owner_username }}" name=owner_username />
+                              <button type="submit" class="confirm-delete">Remove</button>
+                          </form>
+
+                            <br>
+                            <br>
+                        </div>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <div class="no-results">
+                No textbooks found for this user.
+            </div>
+        {% endif %}
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>

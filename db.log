@@ -2320,3 +2320,1380 @@ PRAGMA main.table_info("users")
 PRAGMA main.table_info("posts")
 [raw sql] ()
 COMMIT
+(User|users) _post_configure_properties() started
+(User|users) initialize prop username
+(User|users) initialize prop password
+(User|users) _post_configure_properties() complete
+(Textbook|posts) _post_configure_properties() started
+(Textbook|posts) initialize prop title
+(Textbook|posts) initialize prop topic
+(Textbook|posts) initialize prop isbn
+(Textbook|posts) initialize prop owner_username
+(Textbook|posts) initialize prop id
+(Textbook|posts) initialize prop course
+(Textbook|posts) _post_configure_properties() complete
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[generated in 0.00029s] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 1.09s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 3.629s ago] ()
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.time = ?
+[generated in 0.00034s] ('MATH022',)
+BEGIN (implicit)
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.user_id = ?
+[generated in 0.00023s] ('map728@lehigh.edu',)
+(User|users) _configure_property(username, Column)
+(User|users) _configure_property(password, Column)
+(User|users) Identified primary key columns: OrderedSet([Column('username', TEXT(), table=<users>, primary_key=True, nullable=False)])
+(User|users) constructed
+(Textbook|posts) _configure_property(title, Column)
+(Textbook|posts) _configure_property(topic, Column)
+(Textbook|posts) _configure_property(isbn, ColumnProperty)
+(Textbook|posts) _configure_property(owner_username, ColumnProperty)
+(Textbook|posts) _configure_property(id, Column)
+(Textbook|posts) _configure_property(course, ColumnProperty)
+(Textbook|posts) Identified primary key columns: OrderedSet([Column('id', INTEGER(), table=<posts>, primary_key=True, nullable=False)])
+(Textbook|posts) constructed
+BEGIN (implicit)
+PRAGMA main.table_info("users")
+[raw sql] ()
+PRAGMA main.table_info("posts")
+[raw sql] ()
+COMMIT
+(User|users) _configure_property(username, Column)
+(User|users) _configure_property(password, Column)
+(User|users) Identified primary key columns: OrderedSet([Column('username', TEXT(), table=<users>, primary_key=True, nullable=False)])
+(User|users) constructed
+(Textbook|posts) _configure_property(title, Column)
+(Textbook|posts) _configure_property(topic, Column)
+(Textbook|posts) _configure_property(isbn, ColumnProperty)
+(Textbook|posts) _configure_property(owner_username, ColumnProperty)
+(Textbook|posts) _configure_property(id, Column)
+(Textbook|posts) _configure_property(course, ColumnProperty)
+(Textbook|posts) Identified primary key columns: OrderedSet([Column('id', INTEGER(), table=<posts>, primary_key=True, nullable=False)])
+(Textbook|posts) constructed
+BEGIN (implicit)
+PRAGMA main.table_info("users")
+[raw sql] ()
+PRAGMA main.table_info("posts")
+[raw sql] ()
+COMMIT
+(User|users) _configure_property(username, Column)
+(User|users) _configure_property(password, Column)
+(User|users) Identified primary key columns: OrderedSet([Column('username', TEXT(), table=<users>, primary_key=True, nullable=False)])
+(User|users) constructed
+(Textbook|posts) _configure_property(title, Column)
+(Textbook|posts) _configure_property(topic, Column)
+(Textbook|posts) _configure_property(isbn, ColumnProperty)
+(Textbook|posts) _configure_property(owner_username, ColumnProperty)
+(Textbook|posts) _configure_property(id, Column)
+(Textbook|posts) _configure_property(course, ColumnProperty)
+(Textbook|posts) Identified primary key columns: OrderedSet([Column('id', INTEGER(), table=<posts>, primary_key=True, nullable=False)])
+(Textbook|posts) constructed
+BEGIN (implicit)
+PRAGMA main.table_info("users")
+[raw sql] ()
+PRAGMA main.table_info("posts")
+[raw sql] ()
+COMMIT
+(User|users) _configure_property(username, Column)
+(User|users) _configure_property(password, Column)
+(User|users) Identified primary key columns: OrderedSet([Column('username', TEXT(), table=<users>, primary_key=True, nullable=False)])
+(User|users) constructed
+(Textbook|posts) _configure_property(title, Column)
+(Textbook|posts) _configure_property(topic, Column)
+(Textbook|posts) _configure_property(isbn, ColumnProperty)
+(Textbook|posts) _configure_property(owner_username, ColumnProperty)
+(Textbook|posts) _configure_property(id, Column)
+(Textbook|posts) _configure_property(course, ColumnProperty)
+(Textbook|posts) Identified primary key columns: OrderedSet([Column('id', INTEGER(), table=<posts>, primary_key=True, nullable=False)])
+(Textbook|posts) constructed
+BEGIN (implicit)
+PRAGMA main.table_info("users")
+[raw sql] ()
+PRAGMA main.table_info("posts")
+[raw sql] ()
+COMMIT
+(User|users) _configure_property(username, Column)
+(User|users) _configure_property(password, Column)
+(User|users) Identified primary key columns: OrderedSet([Column('username', TEXT(), table=<users>, primary_key=True, nullable=False)])
+(User|users) constructed
+(Textbook|posts) _configure_property(title, Column)
+(Textbook|posts) _configure_property(topic, Column)
+(Textbook|posts) _configure_property(isbn, ColumnProperty)
+(Textbook|posts) _configure_property(owner_username, ColumnProperty)
+(Textbook|posts) _configure_property(id, Column)
+(Textbook|posts) _configure_property(course, ColumnProperty)
+(Textbook|posts) Identified primary key columns: OrderedSet([Column('id', INTEGER(), table=<posts>, primary_key=True, nullable=False)])
+(Textbook|posts) constructed
+BEGIN (implicit)
+PRAGMA main.table_info("users")
+[raw sql] ()
+PRAGMA main.table_info("posts")
+[raw sql] ()
+COMMIT
+(User|users) _configure_property(username, Column)
+(User|users) _configure_property(password, Column)
+(User|users) Identified primary key columns: OrderedSet([Column('username', TEXT(), table=<users>, primary_key=True, nullable=False)])
+(User|users) constructed
+(Textbook|posts) _configure_property(title, Column)
+(Textbook|posts) _configure_property(topic, Column)
+(Textbook|posts) _configure_property(isbn, ColumnProperty)
+(Textbook|posts) _configure_property(owner_username, ColumnProperty)
+(Textbook|posts) _configure_property(id, Column)
+(Textbook|posts) _configure_property(course, ColumnProperty)
+(Textbook|posts) Identified primary key columns: OrderedSet([Column('id', INTEGER(), table=<posts>, primary_key=True, nullable=False)])
+(Textbook|posts) constructed
+BEGIN (implicit)
+PRAGMA main.table_info("users")
+[raw sql] ()
+PRAGMA main.table_info("posts")
+[raw sql] ()
+COMMIT
+(User|users) _configure_property(username, Column)
+(User|users) _configure_property(password, Column)
+(User|users) Identified primary key columns: OrderedSet([Column('username', TEXT(), table=<users>, primary_key=True, nullable=False)])
+(User|users) constructed
+(Textbook|posts) _configure_property(title, Column)
+(Textbook|posts) _configure_property(topic, Column)
+(Textbook|posts) _configure_property(isbn, ColumnProperty)
+(Textbook|posts) _configure_property(owner_username, ColumnProperty)
+(Textbook|posts) _configure_property(id, Column)
+(Textbook|posts) _configure_property(course, ColumnProperty)
+(Textbook|posts) Identified primary key columns: OrderedSet([Column('id', INTEGER(), table=<posts>, primary_key=True, nullable=False)])
+(Textbook|posts) constructed
+BEGIN (implicit)
+PRAGMA main.table_info("users")
+[raw sql] ()
+PRAGMA main.table_info("posts")
+[raw sql] ()
+COMMIT
+(User|users) _post_configure_properties() started
+(User|users) initialize prop username
+(User|users) initialize prop password
+(User|users) _post_configure_properties() complete
+(Textbook|posts) _post_configure_properties() started
+(Textbook|posts) initialize prop title
+(Textbook|posts) initialize prop topic
+(Textbook|posts) initialize prop isbn
+(Textbook|posts) initialize prop owner_username
+(Textbook|posts) initialize prop id
+(Textbook|posts) initialize prop course
+(Textbook|posts) _post_configure_properties() complete
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[generated in 0.00087s] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 14.09s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 14.1s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 18.94s ago] ()
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.time = ?
+[generated in 0.00020s] ('BUS 003',)
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 30.26s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 31.95s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 43.45s ago] ()
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.time = ?
+[cached since 24.5s ago] ('BUS 003',)
+BEGIN (implicit)
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.user_id = ?
+[generated in 0.00033s] ('map728@lehigh.edu',)
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 58.59s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 62.81s ago] ()
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.time = ?
+[cached since 43.86s ago] ('BUS 003',)
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 66.09s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 66.8s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 69.88s ago] ()
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.time = ?
+[cached since 50.94s ago] ('BUS 003',)
+BEGIN (implicit)
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.user_id = ?
+[cached since 23.59s ago] ('map728@lehigh.edu',)
+BEGIN (implicit)
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.user_id = ?
+[cached since 32.73s ago] ('map728@lehigh.edu',)
+BEGIN (implicit)
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.user_id = ?
+[cached since 33.34s ago] ('map728@lehigh.edu',)
+BEGIN (implicit)
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.user_id = ?
+[cached since 33.5s ago] ('map728@lehigh.edu',)
+BEGIN (implicit)
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.user_id = ?
+[cached since 33.66s ago] ('map728@lehigh.edu',)
+BEGIN (implicit)
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.user_id = ?
+[cached since 33.86s ago] ('map728@lehigh.edu',)
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 83.79s ago] ()
+BEGIN (implicit)
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.user_id = ?
+[cached since 34.05s ago] ('map728@lehigh.edu',)
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 85.05s ago] ()
+BEGIN (implicit)
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.user_id = ?
+[cached since 36.07s ago] ('map728@lehigh.edu',)
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 86.46s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 87.63s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 88.3s ago] ()
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.time = ?
+[cached since 69.35s ago] ('MATH022',)
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 88.91s ago] ()
+BEGIN (implicit)
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.user_id = ?
+[cached since 40.49s ago] ('map728@lehigh.edu',)
+BEGIN (implicit)
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.user_id = ?
+[cached since 44.5s ago] ('map728@lehigh.edu',)
+BEGIN (implicit)
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.user_id = ?
+[cached since 44.59s ago] ('map728@lehigh.edu',)
+BEGIN (implicit)
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.user_id = ?
+[cached since 49.79s ago] ('map728@lehigh.edu',)
+BEGIN (implicit)
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.user_id = ?
+[cached since 51.67s ago] ('map728@lehigh.edu',)
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 102.5s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 104s ago] ()
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.time = ?
+[cached since 85.1s ago] ('BUS 003',)
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 106.7s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 110.5s ago] ()
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.time = ?
+[cached since 91.54s ago] ('BUS003',)
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 111.8s ago] ()
+BEGIN (implicit)
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.user_id = ?
+[cached since 63.72s ago] ('map728@lehigh.edu',)
+BEGIN (implicit)
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.user_id = ?
+[cached since 65.59s ago] ('map728@lehigh.edu',)
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 131.4s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 134.6s ago] ()
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.time = ?
+[cached since 115.6s ago] ('Math 021',)
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 135.9s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 136.2s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 139.7s ago] ()
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.time = ?
+[cached since 120.8s ago] ('MATH 022',)
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 141s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 141s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 141.5s ago] ()
+BEGIN (implicit)
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.user_id = ?
+[cached since 92.3s ago] ('nab628@lehigh.edu',)
+BEGIN (implicit)
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.user_id = ?
+[cached since 92.76s ago] ('map728@lehigh.edu',)
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 145s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 145.7s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 151.4s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 159s ago] ()
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.time = ?
+[cached since 140.1s ago] ('Calc 022',)
+BEGIN (implicit)
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.user_id = ?
+[cached since 110.2s ago] ('map728@lehigh.edu',)
+(User|users) _configure_property(username, Column)
+(User|users) _configure_property(password, Column)
+(User|users) Identified primary key columns: OrderedSet([Column('username', TEXT(), table=<users>, primary_key=True, nullable=False)])
+(User|users) constructed
+(Textbook|posts) _configure_property(title, Column)
+(Textbook|posts) _configure_property(topic, Column)
+(Textbook|posts) _configure_property(isbn, ColumnProperty)
+(Textbook|posts) _configure_property(owner_username, ColumnProperty)
+(Textbook|posts) _configure_property(id, Column)
+(Textbook|posts) _configure_property(course, ColumnProperty)
+(Textbook|posts) Identified primary key columns: OrderedSet([Column('id', INTEGER(), table=<posts>, primary_key=True, nullable=False)])
+(Textbook|posts) constructed
+BEGIN (implicit)
+PRAGMA main.table_info("users")
+[raw sql] ()
+PRAGMA main.table_info("posts")
+[raw sql] ()
+COMMIT
+(User|users) _configure_property(username, Column)
+(User|users) _configure_property(password, Column)
+(User|users) Identified primary key columns: OrderedSet([Column('username', TEXT(), table=<users>, primary_key=True, nullable=False)])
+(User|users) constructed
+(Textbook|posts) _configure_property(title, Column)
+(Textbook|posts) _configure_property(topic, Column)
+(Textbook|posts) _configure_property(isbn, ColumnProperty)
+(Textbook|posts) _configure_property(owner_username, ColumnProperty)
+(Textbook|posts) _configure_property(id, Column)
+(Textbook|posts) _configure_property(course, ColumnProperty)
+(Textbook|posts) Identified primary key columns: OrderedSet([Column('id', INTEGER(), table=<posts>, primary_key=True, nullable=False)])
+(Textbook|posts) constructed
+BEGIN (implicit)
+PRAGMA main.table_info("users")
+[raw sql] ()
+PRAGMA main.table_info("posts")
+[raw sql] ()
+COMMIT
+(User|users) _configure_property(username, Column)
+(User|users) _configure_property(password, Column)
+(User|users) Identified primary key columns: OrderedSet([Column('username', TEXT(), table=<users>, primary_key=True, nullable=False)])
+(User|users) constructed
+(Textbook|posts) _configure_property(title, Column)
+(Textbook|posts) _configure_property(topic, Column)
+(Textbook|posts) _configure_property(isbn, ColumnProperty)
+(Textbook|posts) _configure_property(owner_username, ColumnProperty)
+(Textbook|posts) _configure_property(id, Column)
+(Textbook|posts) _configure_property(course, ColumnProperty)
+(Textbook|posts) Identified primary key columns: OrderedSet([Column('id', INTEGER(), table=<posts>, primary_key=True, nullable=False)])
+(Textbook|posts) constructed
+BEGIN (implicit)
+PRAGMA main.table_info("users")
+[raw sql] ()
+PRAGMA main.table_info("posts")
+[raw sql] ()
+COMMIT
+(User|users) _configure_property(username, Column)
+(User|users) _configure_property(password, Column)
+(User|users) Identified primary key columns: OrderedSet([Column('username', TEXT(), table=<users>, primary_key=True, nullable=False)])
+(User|users) constructed
+(Textbook|posts) _configure_property(title, Column)
+(Textbook|posts) _configure_property(topic, Column)
+(Textbook|posts) _configure_property(isbn, ColumnProperty)
+(Textbook|posts) _configure_property(owner_username, ColumnProperty)
+(Textbook|posts) _configure_property(id, Column)
+(Textbook|posts) _configure_property(course, ColumnProperty)
+(Textbook|posts) Identified primary key columns: OrderedSet([Column('id', INTEGER(), table=<posts>, primary_key=True, nullable=False)])
+(Textbook|posts) constructed
+BEGIN (implicit)
+PRAGMA main.table_info("users")
+[raw sql] ()
+PRAGMA main.table_info("posts")
+[raw sql] ()
+COMMIT
+(User|users) _post_configure_properties() started
+(User|users) initialize prop username
+(User|users) initialize prop password
+(User|users) _post_configure_properties() complete
+(Textbook|posts) _post_configure_properties() started
+(Textbook|posts) initialize prop title
+(Textbook|posts) initialize prop topic
+(Textbook|posts) initialize prop isbn
+(Textbook|posts) initialize prop owner_username
+(Textbook|posts) initialize prop id
+(Textbook|posts) initialize prop course
+(Textbook|posts) _post_configure_properties() complete
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[generated in 0.00031s] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 0.5776s ago] ()
+BEGIN (implicit)
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.user_id = ?
+[generated in 0.00020s] ('nab628@lehigh.edu',)
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 8.493s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 19.28s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 19.29s ago] ()
+BEGIN (implicit)
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.user_id = ?
+[cached since 22.27s ago] ('nab628@lehigh.edu',)
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 26.63s ago] ()
+BEGIN (implicit)
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.user_id = ?
+[cached since 24.91s ago] ('nab628@lehigh.edu',)
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 28.6s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 30.01s ago] ()
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.time = ?
+[generated in 0.00025s] ('MATH22',)
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 33.09s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 37.28s ago] ()
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.time = ?
+[cached since 7.275s ago] ('MATH022',)
+BEGIN (implicit)
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.user_id = ?
+[cached since 41.45s ago] ('nab628@lehigh.edu',)
+BEGIN (implicit)
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.user_id = ?
+[cached since 43.13s ago] ('map728@lehigh.edu',)
+BEGIN (implicit)
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.user_id = ?
+[cached since 43.9s ago] ('map728@lehigh.edu',)
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 48.34s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 53.73s ago] ()
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.time = ?
+[cached since 23.72s ago] ('BUS 003',)
+BEGIN (implicit)
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.user_id = ?
+[cached since 52.04s ago] ('map728@lehigh.edu',)
+BEGIN (implicit)
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.user_id = ?
+[cached since 54.3s ago] ('aio228@lehigh.edu',)
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 62.15s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 64.71s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 66.43s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 66.81s ago] ()
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.time = ?
+[cached since 36.8s ago] ('MATH022',)
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 67.03s ago] ()
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.time = ?
+[cached since 37.02s ago] ('MATH022',)
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 70.25s ago] ()
+BEGIN (implicit)
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.user_id = ?
+[cached since 69.11s ago] ('map728@lehigh.edu',)
+BEGIN (implicit)
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.user_id = ?
+[cached since 69.14s ago] ('aio228@lehigh.edu',)
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 74.16s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 77.03s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 104.3s ago] ()
+BEGIN (implicit)
+INSERT INTO posts (title, topic, content, user_id, time) VALUES (?, ?, ?, ?, ?)
+[generated in 0.00045s] ('The Academic Writer: A Brief Rhetoric', 'Writing', '1319245641', 'map728@lehigh.edu', 'WRT 001')
+COMMIT
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 155s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 155.1s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 158.9s ago] ()
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.time = ?
+[cached since 128.9s ago] ('WRT 001',)
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 170.8s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 172.3s ago] ()
+BEGIN (implicit)
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.user_id = ?
+[cached since 171.3s ago] ('map728@lehigh.edu',)
+BEGIN (implicit)
+INSERT INTO posts (title, topic, content, user_id, time) VALUES (?, ?, ?, ?, ?)
+[cached since 29.24s ago] ('Organizational Behavior: Improving Performance and Commitment in the Workplace (8th Edition)', 'Organizational Behavior', ' 1265378673', 'nab628@lehigh.edu', 'MGT043')
+COMMIT
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 184.3s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 184.3s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 186.3s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 195.6s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 202.8s ago] ()
+BEGIN (implicit)
+INSERT INTO posts (title, topic, content, user_id, time) VALUES (?, ?, ?, ?, ?)
+[cached since 112.7s ago] ('Organizational Behavoir', 'Organizational Behavoir', '9780077676865', 'aio228@lehigh.edu', 'MGT043')
+COMMIT
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 267.7s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 267.8s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 270.3s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 273.7s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 275.6s ago] ()
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.time = ?
+[cached since 245.5s ago] ('MGT043',)
+BEGIN (implicit)
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.user_id = ?
+[cached since 290.9s ago] ('aio228@lehigh.edu',)
+BEGIN (implicit)
+INSERT INTO posts (title, topic, content, user_id, time) VALUES (?, ?, ?, ?, ?)
+[cached since 154.6s ago] ('Economics', 'Business', '1000000000043', 'map728@lehigh.edu', 'ECO 001')
+COMMIT
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 309.6s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 309.7s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 311.4s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 314.7s ago] ()
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.time = ?
+[cached since 284.6s ago] ('ECO 001',)
+BEGIN (implicit)
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.user_id = ?
+[cached since 331.2s ago] ('nab628@lehigh.edu',)
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 336.1s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 347s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 372s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 373.1s ago] ()
+BEGIN (implicit)
+INSERT INTO posts (title, topic, content, user_id, time) VALUES (?, ?, ?, ?, ?)
+[cached since 238.5s ago] ('Economics', 'Intro to Economics', '9780132817257', 'nab628@lehigh.edu', 'ECO001')
+COMMIT
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 393.5s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 393.6s ago] ()
+BEGIN (implicit)
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.user_id = ?
+[cached since 392s ago] ('nab628@lehigh.edu',)
+BEGIN (implicit)
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.user_id = ?
+[cached since 420.4s ago] ('nab628@lehigh.edu',)
+BEGIN (implicit)
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 429.5s ago] ()
+[cached since 429.5s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 431.9s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 433.9s ago] ()
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.time = ?
+[cached since 403.9s ago] ('ECO001',)
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 448.4s ago] ()
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.time = ?
+[cached since 418.4s ago] ('ECO001',)
+BEGIN (implicit)
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.user_id = ?
+[cached since 468s ago] ('nab628@lehigh.edu',)
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 475.5s ago] ()
+BEGIN (implicit)
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.user_id = ?
+[cached since 473.7s ago] ('nab628@lehigh.edu',)
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 477.5s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 478.2s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 479.3s ago] ()
+BEGIN (implicit)
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.user_id = ?
+[cached since 478.1s ago] ('nab628@lehigh.edu',)
+BEGIN (implicit)
+INSERT INTO posts (title, topic, content, user_id, time) VALUES (?, ?, ?, ?, ?)
+[cached since 349.7s ago] ('Differential Equations and Linear Algebra', 'Linear Algebra', '9780321964670', 'aio228@lehigh.edu', 'MATH205')
+COMMIT
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 504.7s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 504.7s ago] ()
+BEGIN (implicit)
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.user_id = ?
+[cached since 503.6s ago] ('aio228@lehigh.edu',)
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 519.8s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 520.9s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 521s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 536.3s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 536.4s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 541.7s ago] ()
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.time = ?
+[cached since 511.7s ago] ('MATH205',)
+BEGIN (implicit)
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.user_id = ?
+[cached since 592.1s ago] ('map728@lehigh.edu',)
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 609.8s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 631.1s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 631.1s ago] ()
+BEGIN (implicit)
+INSERT INTO posts (title, topic, content, user_id, time) VALUES (?, ?, ?, ?, ?)
+[cached since 531.2s ago] ('Business Communication: Developing Leaders for a Networked World', 'Business', '1260571351', 'map728@lehigh.edu', 'BUS 003')
+COMMIT
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 686.2s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 686.3s ago] ()
+BEGIN (implicit)
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.user_id = ?
+[cached since 685.7s ago] ('map728@lehigh.edu',)
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 690.7s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 692.4s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 692.4s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 715.1s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 715.1s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 716.6s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 716.6s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 752s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 752s ago] ()
+BEGIN (implicit)
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.user_id = ?
+[cached since 751.2s ago] ('map728@lehigh.edu',)
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 768.7s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 773.7s ago] ()
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.time = ?
+[cached since 743.7s ago] ('Math 021',)
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 774.9s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 778.1s ago] ()
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.time = ?
+[cached since 748.1s ago] ('ECO 001',)
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 781.5s ago] ()
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.time = ?
+[cached since 751.5s ago] ('ECO 001',)
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 783.5s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 786.9s ago] ()
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.time = ?
+[cached since 756.9s ago] ('ECO001',)
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 788.8s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 796s ago] ()
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.time = ?
+[cached since 766s ago] ('MATH22',)
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 797.7s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 800.3s ago] ()
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.time = ?
+[cached since 770.3s ago] ('Math022',)
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 801.9s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 804.9s ago] ()
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.time = ?
+[cached since 774.8s ago] ('MATH022',)
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 813.8s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 816.8s ago] ()
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.time = ?
+[cached since 786.8s ago] ('MGT043',)
+BEGIN (implicit)
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.user_id = ?
+[cached since 819.9s ago] ('map728@lehigh.edu',)
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 823.7s ago] ()
+(User|users) _configure_property(username, Column)
+(User|users) _configure_property(password, Column)
+(User|users) Identified primary key columns: OrderedSet([Column('username', TEXT(), table=<users>, primary_key=True, nullable=False)])
+(User|users) constructed
+(Textbook|posts) _configure_property(title, Column)
+(Textbook|posts) _configure_property(topic, Column)
+(Textbook|posts) _configure_property(isbn, ColumnProperty)
+(Textbook|posts) _configure_property(owner_username, ColumnProperty)
+(Textbook|posts) _configure_property(id, Column)
+(Textbook|posts) _configure_property(course, ColumnProperty)
+(Textbook|posts) Identified primary key columns: OrderedSet([Column('id', INTEGER(), table=<posts>, primary_key=True, nullable=False)])
+(Textbook|posts) constructed
+BEGIN (implicit)
+PRAGMA main.table_info("users")
+[raw sql] ()
+PRAGMA main.table_info("posts")
+[raw sql] ()
+COMMIT
+(User|users) _post_configure_properties() started
+(User|users) initialize prop username
+(User|users) initialize prop password
+(User|users) _post_configure_properties() complete
+(Textbook|posts) _post_configure_properties() started
+(Textbook|posts) initialize prop title
+(Textbook|posts) initialize prop topic
+(Textbook|posts) initialize prop isbn
+(Textbook|posts) initialize prop owner_username
+(Textbook|posts) initialize prop id
+(Textbook|posts) initialize prop course
+(Textbook|posts) _post_configure_properties() complete
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[generated in 0.00027s] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 1.201s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 2.013s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 5.454s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 6.594s ago] ()
+BEGIN (implicit)
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.user_id = ?
+[generated in 0.00011s] ('map728@lehigh.edu',)
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 10.66s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 11.25s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 11.27s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 120.3s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 133.6s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 133.6s ago] ()
+BEGIN (implicit)
+SELECT posts.title AS posts_title, posts.topic AS posts_topic, posts.content AS posts_content, posts.user_id AS posts_user_id, posts.id AS posts_id, posts.time AS posts_time 
+FROM posts 
+WHERE posts.user_id = ?
+[cached since 129.2s ago] ('jom928@lehigh.edu',)
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 141.7s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 144.7s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 146s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 146s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 153.4s ago] ()
+BEGIN (implicit)
+SELECT count(*) AS count_1 
+FROM (SELECT users.username AS users_username, users.password AS users_password 
+FROM users) AS anon_1
+[cached since 153.4s ago] ()

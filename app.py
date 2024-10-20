@@ -1,6 +1,7 @@
+# cmd shift p then make python venv
 # pip install flask
 # pip install sqlalchemy
-# cmd shift p then make python venv
+
 from flask import *
 from database import init_db, db_session
 from models import *
@@ -64,9 +65,8 @@ def newpost():
 def displayResults():
     if "username" in session:
         session['count_users'] = db_session.query(User).count()
-        print(session["course"])
-        if session["course"]:
-            textbooks = db_session.query(Textbook).where(session["course"] ==Textbook.course).all()
+        if session["course1"]:
+            textbooks = db_session.query(Textbook).where(session["course1"] ==Textbook.course).all()
             return render_template("textbookList.html", textbooks=textbooks)
     
     flash("You need to log in")
@@ -82,7 +82,7 @@ def home():
             session["page"]="home"
             return render_template("home.html")
         elif request.method=="POST":
-            session["course"]= request.form["course"]
+            session["course1"]= request.form["course"]
             
             return redirect(url_for('displayResults'))
     else:

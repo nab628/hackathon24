@@ -1,0 +1,48 @@
+<!-- templates/search_results.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/textbookList.css')}}">
+</head>
+<body>
+    <nav>
+        <a href="/logout">Logout</a>
+        <a href="/newpost">List a textbook</a>
+        <a href="/home">Find a textbook</a>
+        <a href="/profile">Profile</a>
+    </nav>
+
+    <div class="results-container">
+        <h2 class="results-header">
+            {% if textbooks %}
+                Search Results for "{{ session["course1"] }}"
+            {% else %}
+                No Results Found
+            {% endif %}
+        </h2>
+
+        {% if textbooks %}
+            <ul class="textbook-list">
+                {% for textbook in textbooks %}
+                    <li class="textbook-item">
+                        <div class="textbook-title">{{ textbook.title }}</div>
+                        <div class="textbook-details">
+                            ISBN: {{ textbook.isbn }}<br>
+                            Course: {{ textbook.course}}<br>
+                            Owner: {{textbook.owner_username}}<br>
+                        </div>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <div class="no-results">
+                No textbooks found for the course code "{{ search_query }}". 
+                Please try another search.
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
